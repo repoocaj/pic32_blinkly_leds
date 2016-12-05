@@ -213,6 +213,11 @@ extern "C" {
 #define SYS_TMR_CLIENT_TOLERANCE        10
 #define SYS_TMR_INTERRUPT_NOTIFICATION  false
 
+/*** WDT System Service Configuration ***/
+
+#define WDT_PLIB_ID     				WDT_ID_0
+
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Driver Configuration

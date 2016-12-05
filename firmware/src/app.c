@@ -57,6 +57,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "boot_launcher.h"
 #include "debug_flags.h"
 #include "system/command/sys_command.h"
+#include "system/wdt/sys_wdt.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -94,7 +95,11 @@ void TimerCallBack(uintptr_t context, uint32_t tickCount)
 {
     /* Toggle LED */       
     BSP_LEDToggle(BSP_LED_3);
+   
     appData.count++;        
+    
+    /* Service the WDT */
+    SYS_WDT_TimerClear();
 }
 
 // *****************************************************************************

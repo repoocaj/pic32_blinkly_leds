@@ -134,6 +134,10 @@
         <Path>Header Files/framework/system/int</Path>
       </File>
       <File>
+        <Name>sys_wdt_local.h</Name>
+        <Path>Header Files/framework/system/wdt/src</Path>
+      </File>
+      <File>
         <Name>osal_impl_basic.h</Name>
         <Path>Header Files/framework/osal/src</Path>
       </File>
@@ -206,6 +210,10 @@
         <Path>Header Files/framework/system/common</Path>
       </File>
       <File>
+        <Name>sys_wdt.c</Name>
+        <Path>Source Files/framework/system/wdt/src</Path>
+      </File>
+      <File>
         <Name>sys_clk_compatibility.h</Name>
         <Path>Header Files/framework/system/clk</Path>
       </File>
@@ -232,6 +240,10 @@
       <File>
         <Name>osal_definitions.h</Name>
         <Path>Header Files/framework/osal</Path>
+      </File>
+      <File>
+        <Name>sys_wdt.h</Name>
+        <Path>Header Files/framework/system/wdt</Path>
       </File>
       <File>
         <Name>sys_devcon.h</Name>
@@ -283,7 +295,7 @@
       <Template>
         <Name>system_init.c</Name>
         <Path>Source Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>C192B95CC30AC2AF4ECFA84C7ED4A333</Checksum>
+        <Checksum>BFA0E5E8B8DB4F4D843A63D9FE713579</Checksum>
       </Template>
       <Template>
         <Name>sys_clk_static.c</Name>
@@ -298,7 +310,7 @@
       <Template>
         <Name>system_config.h</Name>
         <Path>Header Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>7C76F8489A24AE8CE89892BCFDA42093</Checksum>
+        <Checksum>16D2F2986D4220882DF9A345519F254C</Checksum>
       </Template>
       <Template>
         <Name>app.c</Name>
@@ -321,7 +333,7 @@
       <Template>
         <Name>system_definitions.h</Name>
         <Path>Header Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>E2B7B8D12ACC4A02582471EFC4CFA49D</Checksum>
+        <Checksum>31542216DDBFDEB43F239DA33EDE187B</Checksum>
       </Template>
       <Template>
         <Name>bsp.h</Name>

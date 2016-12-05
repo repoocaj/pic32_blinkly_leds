@@ -84,9 +84,9 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #pragma config POSCMOD =    OFF
 #pragma config OSCIOFNC =   OFF
 #pragma config FCKSM =      CSECME
-#pragma config WDTPS =      PS1048576
+#pragma config WDTPS =      PS4096
 #pragma config WDTSPGM =    STOP
-#pragma config FWDTEN =     OFF
+#pragma config FWDTEN =     ON
 #pragma config WINDIS =     NORMAL
 #pragma config FWDTWINSZ =  WINSZ_25
 #pragma config DMTCNT =     DMT31

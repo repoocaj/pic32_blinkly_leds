@@ -58,6 +58,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "system/console/sys_console.h"
 #include "system/tmr/sys_tmr.h"
 #include "system/reset/sys_reset.h"
+#include "system/wdt/sys_wdt.h"
 #include "driver/tmr/drv_tmr.h"
 #include "driver/usart/drv_usart.h"
 #include "system/ports/sys_ports.h"
