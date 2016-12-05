@@ -50,20 +50,8 @@
   <Manifest>
     <Files>
       <File>
-        <Name>osal_impl_basic.h</Name>
-        <Path>Header Files/framework/osal/src</Path>
-      </File>
-      <File>
         <Name>drv_tmr_mapping.h</Name>
         <Path>Header Files/framework/driver/tmr</Path>
-      </File>
-      <File>
-        <Name>drv_tmr_variant_mapping.h</Name>
-        <Path>Header Files/framework/driver/tmr/src</Path>
-      </File>
-      <File>
-        <Name>sys_reset.h</Name>
-        <Path>Header Files/framework/system/reset</Path>
       </File>
       <File>
         <Name>drv_tmr_local.h</Name>
@@ -74,40 +62,24 @@
         <Path>Header Files/framework/driver</Path>
       </File>
       <File>
-        <Name>drv_tmr.h</Name>
-        <Path>Header Files/framework/driver/tmr</Path>
-      </File>
-      <File>
-        <Name>sys_devcon.c</Name>
-        <Path>Source Files/framework/system/devcon/src</Path>
-      </File>
-      <File>
         <Name>sys_reset_local.h</Name>
         <Path>Header Files/framework/system/reset/src</Path>
-      </File>
-      <File>
-        <Name>sys_reset.c</Name>
-        <Path>Source Files/framework/system/reset/src</Path>
-      </File>
-      <File>
-        <Name>sys_tmr.h</Name>
-        <Path>Header Files/framework/system/tmr</Path>
       </File>
       <File>
         <Name>sys_tmr.c</Name>
         <Path>Source Files/framework/system/tmr/src</Path>
       </File>
       <File>
-        <Name>osal.h</Name>
-        <Path>Header Files/framework/osal</Path>
+        <Name>sys_console_uart.c</Name>
+        <Path>Source Files/framework/system/console/src</Path>
       </File>
       <File>
         <Name>sys_reset_mapping.h</Name>
         <Path>Header Files/framework/system/reset/src</Path>
       </File>
       <File>
-        <Name>sys_ports.h</Name>
-        <Path>Header Files/framework/system/ports</Path>
+        <Name>drv_usart_buffer_queue.c</Name>
+        <Path>Source Files/framework/driver/usart/src/dynamic</Path>
       </File>
       <File>
         <Name>driver.h</Name>
@@ -118,44 +90,16 @@
         <Path>Source Files/framework/system/devcon/src</Path>
       </File>
       <File>
-        <Name>sys_common.h</Name>
-        <Path>Header Files/framework/system/common</Path>
-      </File>
-      <File>
-        <Name>sys_buffer.h</Name>
-        <Path>Header Files/framework/system/common</Path>
-      </File>
-      <File>
         <Name>sys_int_pic32.c</Name>
         <Path>Source Files/framework/system/int/src</Path>
-      </File>
-      <File>
-        <Name>sys_clk_compatibility.h</Name>
-        <Path>Header Files/framework/system/clk</Path>
       </File>
       <File>
         <Name>sys_clk.h</Name>
         <Path>Header Files/framework/system/clk</Path>
       </File>
       <File>
-        <Name>osal_impl_none.h</Name>
-        <Path>Header Files/framework/osal/src</Path>
-      </File>
-      <File>
-        <Name>sys_clk_mapping.h</Name>
-        <Path>Header Files/framework/system/clk</Path>
-      </File>
-      <File>
-        <Name>sys_devcon_cache_pic32mz.S</Name>
-        <Path>Source Files/framework/system/devcon/src</Path>
-      </File>
-      <File>
-        <Name>osal_definitions.h</Name>
-        <Path>Header Files/framework/osal</Path>
-      </File>
-      <File>
-        <Name>sys_int_mapping.h</Name>
-        <Path>Header Files/framework/system/int</Path>
+        <Name>sys_command.c</Name>
+        <Path>Source Files/framework/system/command/src</Path>
       </File>
       <File>
         <Name>drv_tmr.c</Name>
@@ -164,10 +108,6 @@
       <File>
         <Name>sys_int_private.h</Name>
         <Path>Header Files/framework/system/int/src</Path>
-      </File>
-      <File>
-        <Name>sys_devcon.h</Name>
-        <Path>Header Files/framework/system/devcon</Path>
       </File>
       <File>
         <Name>drv_tmr_compatibility.h</Name>
@@ -182,8 +122,132 @@
         <Path>Header Files/framework/system</Path>
       </File>
       <File>
+        <Name>drv_usart.h</Name>
+        <Path>Header Files/framework/driver/usart</Path>
+      </File>
+      <File>
+        <Name>sys_console.h</Name>
+        <Path>Header Files/framework/system/console</Path>
+      </File>
+      <File>
+        <Name>sys_int.h</Name>
+        <Path>Header Files/framework/system/int</Path>
+      </File>
+      <File>
+        <Name>osal_impl_basic.h</Name>
+        <Path>Header Files/framework/osal/src</Path>
+      </File>
+      <File>
+        <Name>drv_tmr_variant_mapping.h</Name>
+        <Path>Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File>
+        <Name>sys_reset.h</Name>
+        <Path>Header Files/framework/system/reset</Path>
+      </File>
+      <File>
+        <Name>drv_tmr.h</Name>
+        <Path>Header Files/framework/driver/tmr</Path>
+      </File>
+      <File>
+        <Name>sys_devcon.c</Name>
+        <Path>Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File>
+        <Name>sys_dma.h</Name>
+        <Path>Header Files/framework/system/dma</Path>
+      </File>
+      <File>
+        <Name>sys_console.c</Name>
+        <Path>Source Files/framework/system/console/src</Path>
+      </File>
+      <File>
+        <Name>sys_reset.c</Name>
+        <Path>Source Files/framework/system/reset/src</Path>
+      </File>
+      <File>
+        <Name>sys_tmr.h</Name>
+        <Path>Header Files/framework/system/tmr</Path>
+      </File>
+      <File>
+        <Name>osal.h</Name>
+        <Path>Header Files/framework/osal</Path>
+      </File>
+      <File>
+        <Name>drv_usart_local.h</Name>
+        <Path>Header Files/framework/driver/usart/src</Path>
+      </File>
+      <File>
+        <Name>sys_ports.h</Name>
+        <Path>Header Files/framework/system/ports</Path>
+      </File>
+      <File>
+        <Name>drv_usart_read_write.c</Name>
+        <Path>Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File>
+        <Name>drv_usart.c</Name>
+        <Path>Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File>
+        <Name>sys_command.h</Name>
+        <Path>Header Files/framework/system/command</Path>
+      </File>
+      <File>
+        <Name>sys_debug_local.h</Name>
+        <Path>Header Files/framework/system/debug/src</Path>
+      </File>
+      <File>
+        <Name>sys_common.h</Name>
+        <Path>Header Files/framework/system/common</Path>
+      </File>
+      <File>
+        <Name>sys_buffer.h</Name>
+        <Path>Header Files/framework/system/common</Path>
+      </File>
+      <File>
+        <Name>sys_clk_compatibility.h</Name>
+        <Path>Header Files/framework/system/clk</Path>
+      </File>
+      <File>
+        <Name>osal_impl_none.h</Name>
+        <Path>Header Files/framework/osal/src</Path>
+      </File>
+      <File>
+        <Name>sys_console_uart.h</Name>
+        <Path>Header Files/framework/system/console/src</Path>
+      </File>
+      <File>
+        <Name>sys_clk_mapping.h</Name>
+        <Path>Header Files/framework/system/clk</Path>
+      </File>
+      <File>
+        <Name>sys_devcon_cache_pic32mz.S</Name>
+        <Path>Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File>
+        <Name>sys_int_mapping.h</Name>
+        <Path>Header Files/framework/system/int</Path>
+      </File>
+      <File>
+        <Name>osal_definitions.h</Name>
+        <Path>Header Files/framework/osal</Path>
+      </File>
+      <File>
+        <Name>sys_devcon.h</Name>
+        <Path>Header Files/framework/system/devcon</Path>
+      </File>
+      <File>
+        <Name>sys_debug.c</Name>
+        <Path>Source Files/framework/system/debug/src</Path>
+      </File>
+      <File>
         <Name>sys_debug.h</Name>
         <Path>Header Files/framework/system/debug</Path>
+      </File>
+      <File>
+        <Name>drv_usart_variant_mapping.h</Name>
+        <Path>Header Files/framework/driver/usart/src</Path>
       </File>
       <File>
         <Name>sys_module.h</Name>
@@ -202,8 +266,8 @@
         <Path>Header Files/framework/system/common</Path>
       </File>
       <File>
-        <Name>sys_int.h</Name>
-        <Path>Header Files/framework/system/int</Path>
+        <Name>sys_console_local.h</Name>
+        <Path>Header Files/framework/system/console/src</Path>
       </File>
     </Files>
     <Templates>
@@ -219,7 +283,7 @@
       <Template>
         <Name>system_init.c</Name>
         <Path>Source Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>F19DED014741C9DB4DEC5E7375110CF2</Checksum>
+        <Checksum>C192B95CC30AC2AF4ECFA84C7ED4A333</Checksum>
       </Template>
       <Template>
         <Name>sys_clk_static.c</Name>
@@ -229,12 +293,12 @@
       <Template>
         <Name>system_interrupt.c</Name>
         <Path>Source Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>C934CFD980878E57EE336D976F540A07</Checksum>
+        <Checksum>ECC4BD4E38AD439D87A79F7A0D9DF46B</Checksum>
       </Template>
       <Template>
         <Name>system_config.h</Name>
         <Path>Header Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>382C1E37EE48F8DE1666FD9D5BAC6820</Checksum>
+        <Checksum>7C76F8489A24AE8CE89892BCFDA42093</Checksum>
       </Template>
       <Template>
         <Name>app.c</Name>
@@ -243,7 +307,7 @@
       <Template>
         <Name>sys_ports_static.c</Name>
         <Path>Source Files/app/system_config/pic32mz_ef_sk/framework/system/ports/src</Path>
-        <Checksum>3DFB0BC56732FDD6D5377CC83C754517</Checksum>
+        <Checksum>5AED533BC31F0E2092C605B16E33974F</Checksum>
       </Template>
       <Template>
         <Name>system_exceptions.c</Name>
@@ -257,7 +321,7 @@
       <Template>
         <Name>system_definitions.h</Name>
         <Path>Header Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>B53AC94B4672B0F99379E81769069373</Checksum>
+        <Checksum>E2B7B8D12ACC4A02582471EFC4CFA49D</Checksum>
       </Template>
       <Template>
         <Name>bsp.h</Name>
@@ -267,7 +331,7 @@
       <Template>
         <Name>system_tasks.c</Name>
         <Path>Source Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>0F05C999623AAF5AD70B92AE90BB0C67</Checksum>
+        <Checksum>0351EC1FEE3ED905B25C5DF27E348F02</Checksum>
       </Template>
     </Templates>
     <CompilerItems>

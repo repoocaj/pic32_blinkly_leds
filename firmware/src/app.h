@@ -67,7 +67,9 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // *****************************************************************************
 
 /* Modify this value to alter the LED blink rate */
-#define APP_LED_BLINK_DELAY     50  //50 mili second
+#define APP_LED_BLINK_DELAY     250
+
+#define UPGRADE_FILE            "mf_test1.xml"
 
 // *****************************************************************************
 // *****************************************************************************

@@ -56,6 +56,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "app.h"
 #include "boot_launcher.h"
 #include "debug_flags.h"
+#include "system/command/sys_command.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -177,15 +178,19 @@ void APP_Tasks ( void )
          * so nothing is there to be done in this state */
         case APP_STATE_IDLE:
         {
-            if (appData.count > 100)
+            if (appData.count > 120)
             {
                 BSP_LEDOn(BSP_LED_2);
+                SYS_CONSOLE_PRINT("Upgrade to: %s\r\n", UPGRADE_FILE);
+
+                /* Wait a second */
                 delay_us(1000000);
+
                 set_debug_flags(DEBUG_LVL_INFO);
                 boot_launcher_update(
                     "j1metmxb1z3bx1or",
                     "f3ecbe3bf48ae853216bc763f161d5cf00106d1a",
-                    "mf_test1.xml"
+                    UPGRADE_FILE
                 );
             }
             break;

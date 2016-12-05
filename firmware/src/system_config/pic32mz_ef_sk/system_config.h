@@ -87,11 +87,37 @@ extern "C" {
 #define SYS_CLK_BUS_PERIPHERAL_8            100000000ul
 #define SYS_CLK_CONFIG_PRIMARY_XTAL         24000000ul
 #define SYS_CLK_CONFIG_SECONDARY_XTAL       0ul
-   // *****************************************************************************
+   
+/*** Command Processor System Service Configuration ***/
+#define SYS_CMD_ENABLE
+#define SYS_CMD_DEVICE_MAX_INSTANCES    SYS_CONSOLE_DEVICE_MAX_INSTANCES
+#define SYS_CMD_PRINT_BUFFER_SIZE       8192
+#define SYS_CMD_BUFFER_DMA_READY        __attribute__((coherent)) __attribute__((aligned(16)))
+#define SYS_CMD_REMAP_SYS_CONSOLE_MESSAGE
+#define SYS_CMD_REMAP_SYS_DEBUG_MESSAGE
+// *****************************************************************************
 /* Common System Service Configuration Options
 */
 #define SYS_VERSION_STR           "2.01"
 #define SYS_VERSION               20100
+
+/*** Console System Service Configuration ***/
+
+#define SYS_CONSOLE_OVERRIDE_STDIO
+#define SYS_CONSOLE_DEVICE_MAX_INSTANCES        2
+#define SYS_CONSOLE_INSTANCES_NUMBER            1
+#define SYS_CONSOLE_UART_IDX               DRV_USART_INDEX_0
+#define SYS_CONSOLE_UART_RD_QUEUE_DEPTH    1
+#define SYS_CONSOLE_UART_WR_QUEUE_DEPTH    64
+#define SYS_CONSOLE_BUFFER_DMA_READY
+
+
+
+/*** Debug System Service Configuration ***/
+#define SYS_DEBUG_ENABLE
+#define DEBUG_PRINT_BUFFER_SIZE       8192
+#define SYS_DEBUG_BUFFER_DMA_READY
+#define SYS_DEBUG_USE_CONSOLE
 
 /*** Interrupt System Service Configuration ***/
 #define SYS_INT                     true
@@ -113,11 +139,11 @@ extern "C" {
 #define SYS_PORT_B_CNPD         0x0000
 #define SYS_PORT_B_CNEN         0x0000
 
-#define SYS_PORT_C_ANSEL        0xFFFF
+#define SYS_PORT_C_ANSEL        0xFFFD
 #define SYS_PORT_C_TRIS         0xFFFF
 #define SYS_PORT_C_LAT          0x0000
 #define SYS_PORT_C_ODC          0x0000
-#define SYS_PORT_C_CNPU         0x0000
+#define SYS_PORT_C_CNPU         0x0002
 #define SYS_PORT_C_CNPD         0x0000
 #define SYS_PORT_C_CNEN         0x0000
 
@@ -129,7 +155,7 @@ extern "C" {
 #define SYS_PORT_D_CNPD         0x0000
 #define SYS_PORT_D_CNEN         0x0000
 
-#define SYS_PORT_E_ANSEL        0xFFF0
+#define SYS_PORT_E_ANSEL        0xFFD0
 #define SYS_PORT_E_TRIS         0xFFFF
 #define SYS_PORT_E_LAT          0x0000
 #define SYS_PORT_E_ODC          0x0000
@@ -206,7 +232,52 @@ extern "C" {
 #define DRV_TMR_ASYNC_WRITE_ENABLE_IDX0     false
 #define DRV_TMR_POWER_STATE_IDX0            SYS_MODULE_POWER_RUN_FULL
 
- 
+ // *****************************************************************************
+/* USART Driver Configuration Options
+*/
+#define DRV_USART_INTERRUPT_MODE                    true
+
+#define DRV_USART_BYTE_MODEL_SUPPORT                false
+
+#define DRV_USART_READ_WRITE_MODEL_SUPPORT          true
+
+#define DRV_USART_BUFFER_QUEUE_SUPPORT              true
+
+#define DRV_USART_CLIENTS_NUMBER                    1
+#define DRV_USART_INSTANCES_NUMBER                  1
+
+#define DRV_USART_PERIPHERAL_ID_IDX0                USART_ID_1
+#define DRV_USART_OPER_MODE_IDX0                    DRV_USART_OPERATION_MODE_NORMAL
+#define DRV_USART_OPER_MODE_DATA_IDX0               
+#define DRV_USART_INIT_FLAG_WAKE_ON_START_IDX0      false
+#define DRV_USART_INIT_FLAG_AUTO_BAUD_IDX0          false
+#define DRV_USART_INIT_FLAG_STOP_IN_IDLE_IDX0       false
+#define DRV_USART_INIT_FLAGS_IDX0                   0
+#define DRV_USART_BRG_CLOCK_IDX0                    100000000
+#define DRV_USART_BAUD_RATE_IDX0                    460800
+#define DRV_USART_LINE_CNTRL_IDX0                   DRV_USART_LINE_CONTROL_8NONE1
+#define DRV_USART_HANDSHAKE_MODE_IDX0               DRV_USART_HANDSHAKE_NONE
+#define DRV_USART_XMIT_INT_SRC_IDX0                 INT_SOURCE_USART_1_TRANSMIT
+#define DRV_USART_RCV_INT_SRC_IDX0                  INT_SOURCE_USART_1_RECEIVE
+#define DRV_USART_ERR_INT_SRC_IDX0                  INT_SOURCE_USART_1_ERROR
+#define DRV_USART_XMIT_INT_VECTOR_IDX0              INT_VECTOR_UART1_TX
+#define DRV_USART_XMIT_INT_PRIORITY_IDX0            INT_PRIORITY_LEVEL1
+#define DRV_USART_XMIT_INT_SUB_PRIORITY_IDX0        INT_SUBPRIORITY_LEVEL0
+#define DRV_USART_RCV_INT_VECTOR_IDX0               INT_VECTOR_UART1_RX
+#define DRV_USART_RCV_INT_PRIORITY_IDX0             INT_PRIORITY_LEVEL1
+#define DRV_USART_RCV_INT_SUB_PRIORITY_IDX0         INT_SUBPRIORITY_LEVEL0
+#define DRV_USART_ERR_INT_VECTOR_IDX0               INT_VECTOR_UART1_FAULT
+#define DRV_USART_ERR_INT_PRIORITY_IDX0             INT_PRIORITY_LEVEL1
+#define DRV_USART_ERR_INT_SUB_PRIORITY_IDX0         INT_SUBPRIORITY_LEVEL0
+
+#define DRV_USART_XMIT_QUEUE_SIZE_IDX0              10
+#define DRV_USART_RCV_QUEUE_SIZE_IDX0               10
+
+
+#define DRV_USART_POWER_STATE_IDX0                  SYS_MODULE_POWER_RUN_FULL
+
+#define DRV_USART_QUEUE_DEPTH_COMBINED              20
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Middleware & Other Library Configuration

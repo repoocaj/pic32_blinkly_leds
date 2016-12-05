@@ -81,6 +81,13 @@
             <itemPath>../../../../../../../framework/driver/tmr/drv_tmr_mapping.h</itemPath>
             <itemPath>../../../../../../../framework/driver/tmr/drv_tmr_compatibility.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f2" displayName="usart" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h</itemPath>
+              <itemPath>../../../../../../../framework/driver/usart/src/drv_usart_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../../framework/driver/usart/drv_usart.h</itemPath>
+          </logicalFolder>
           <itemPath>../../../../../../../framework/driver/driver.h</itemPath>
           <itemPath>../../../../../../../framework/driver/driver_common.h</itemPath>
         </logicalFolder>
@@ -98,13 +105,26 @@
             <itemPath>../../../../../../../framework/system/clk/sys_clk_mapping.h</itemPath>
             <itemPath>../../../../../../../framework/system/clk/sys_clk_compatibility.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f9" displayName="command" projectFiles="true">
+            <itemPath>../../../../../../../framework/system/command/sys_command.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f1" displayName="common" projectFiles="true">
             <itemPath>../../../../../../../framework/system/common/sys_common.h</itemPath>
             <itemPath>../../../../../../../framework/system/common/sys_module.h</itemPath>
             <itemPath>../../../../../../../framework/system/common/sys_buffer.h</itemPath>
             <itemPath>../../../../../../../framework/system/common/sys_queue.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f10" displayName="console" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../../framework/system/console/src/sys_console_local.h</itemPath>
+              <itemPath>../../../../../../../framework/system/console/src/sys_console_uart.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../../framework/system/console/sys_console.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f7" displayName="debug" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../../framework/system/debug/src/sys_debug_local.h</itemPath>
+            </logicalFolder>
             <itemPath>../../../../../../../framework/system/debug/sys_debug.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="devcon" projectFiles="true">
@@ -112,6 +132,9 @@
               <itemPath>../../../../../../../framework/system/devcon/src/sys_devcon_local.h</itemPath>
             </logicalFolder>
             <itemPath>../../../../../../../framework/system/devcon/sys_devcon.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f8" displayName="dma" projectFiles="true">
+            <itemPath>../../../../../../../framework/system/dma/sys_dma.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f4" displayName="int" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
@@ -123,7 +146,7 @@
           <logicalFolder name="f3" displayName="ports" projectFiles="true">
             <itemPath>../../../../../../../framework/system/ports/sys_ports.h</itemPath>
           </logicalFolder>
-          <logicalFolder name="f8" displayName="reset" projectFiles="true">
+          <logicalFolder name="f11" displayName="reset" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <itemPath>../../../../../../../framework/system/reset/src/sys_reset_local.h</itemPath>
               <itemPath>../../../../../../../framework/system/reset/src/sys_reset_mapping.h</itemPath>
@@ -327,8 +350,33 @@
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
+          <logicalFolder name="f2" displayName="usart" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+                <itemPath>../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c</itemPath>
+                <itemPath>../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c</itemPath>
+                <itemPath>../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
         </logicalFolder>
         <logicalFolder name="system" displayName="system" projectFiles="true">
+          <logicalFolder name="f1" displayName="command" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../../framework/system/command/src/sys_command.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f4" displayName="console" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../../framework/system/console/src/sys_console.c</itemPath>
+              <itemPath>../../../../../../../framework/system/console/src/sys_console_uart.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f5" displayName="debug" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../../framework/system/debug/src/sys_debug.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
           <logicalFolder name="devcon" displayName="devcon" projectFiles="true">
             <logicalFolder name="src" displayName="src" projectFiles="true">
               <itemPath>../../../../../../../framework/system/devcon/src/sys_devcon_pic32mz.c</itemPath>
@@ -344,7 +392,7 @@
               <itemPath>../../../../../../../framework/system/int/src/sys_int_pic32.c</itemPath>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="f1" displayName="reset" projectFiles="true">
+          <logicalFolder name="f6" displayName="reset" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <itemPath>../../../../../../../framework/system/reset/src/sys_reset.c</itemPath>
             </logicalFolder>
@@ -506,6 +554,30 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/driver/usart/drv_usart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/osal/osal.h"
             ex="false"
             overriding="false">
@@ -618,6 +690,14 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/system/command/src/sys_command.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/command/sys_command.h"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/system/common/sys_buffer.h"
             ex="false"
             overriding="false">
@@ -649,6 +729,34 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_uart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_uart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/sys_console.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/debug/src/sys_debug.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/debug/src/sys_debug_local.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/debug/sys_debug.h"
             ex="false"
@@ -745,6 +853,10 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/dma/sys_dma.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/int/src/sys_int_private.h"
             ex="false"
@@ -2132,8 +2244,8 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeCustomizationPreStep></makeCustomizationPreStep>
-        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPostStepEnabled>true</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep>${ProjectDir}/ProcessHexFile.pl ${ImagePath} ${ImageDir}</makeCustomizationPostStep>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -3459,7 +3571,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/system_config/pic32mz_ef_sk;../../../../../../../framework;../src/system_config/pic32mz_ef_sk/framework;../src/pic32mz_ef_sk;../src/system_config/pic32mz_ef_sk/bsp"/>
+                  value="../src/pic32mz_ef_sk;../src;../src/system_config/pic32mz_ef_sk;../../../../../../../framework;../src/system_config/pic32mz_ef_sk/framework;../src/system_config/pic32mz_ef_sk/bsp"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -3518,7 +3630,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="0"/>
+        <property key="heap-size" value="2048"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>
@@ -4134,6 +4246,30 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/driver/usart/drv_usart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/osal/osal.h"
             ex="false"
             overriding="false">
@@ -4246,6 +4382,14 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/system/command/src/sys_command.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/command/sys_command.h"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/system/common/sys_buffer.h"
             ex="false"
             overriding="false">
@@ -4277,6 +4421,34 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_uart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_uart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/sys_console.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/debug/src/sys_debug.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/debug/src/sys_debug_local.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/debug/sys_debug.h"
             ex="false"
@@ -4341,6 +4513,10 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/dma/sys_dma.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/int/src/sys_int_private.h"
             ex="false"
@@ -5863,6 +6039,30 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/driver/usart/drv_usart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/osal/osal.h"
             ex="false"
             overriding="false">
@@ -5975,6 +6175,14 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/system/command/src/sys_command.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/command/sys_command.h"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/system/common/sys_buffer.h"
             ex="false"
             overriding="false">
@@ -6006,6 +6214,34 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_uart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_uart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/sys_console.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/debug/src/sys_debug.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/debug/src/sys_debug_local.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/debug/sys_debug.h"
             ex="false"
@@ -6070,6 +6306,10 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/dma/sys_dma.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/int/src/sys_int_private.h"
             ex="false"
@@ -7290,6 +7530,30 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
+      <item path="../../../../../../../framework/driver/usart/drv_usart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/system/clk/sys_clk_compatibility.h"
             ex="true"
             overriding="false">
@@ -7305,6 +7569,42 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/command/src/sys_command.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/command/sys_command.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_uart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_uart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/sys_console.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/debug/src/sys_debug.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/debug/src/sys_debug_local.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/devcon/src/sys_devcon_cache.h"
             ex="true"
@@ -7369,6 +7669,10 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/dma/sys_dma.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/reset/src/sys_reset.c"
             ex="true"
@@ -8653,6 +8957,30 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/driver/usart/drv_usart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/osal/osal.h"
             ex="false"
             overriding="false">
@@ -8749,6 +9077,14 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/system/command/src/sys_command.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/command/sys_command.h"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/system/common/sys_buffer.h"
             ex="false"
             overriding="false">
@@ -8812,6 +9148,34 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_uart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_uart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/sys_console.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/debug/src/sys_debug.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/debug/src/sys_debug_local.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/debug/sys_debug.h"
             ex="false"
@@ -8956,6 +9320,10 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/dma/sys_dma.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/int/src/sys_int_pic32.c"
             ex="false"
@@ -10437,6 +10805,30 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
+      <item path="../../../../../../../framework/driver/usart/drv_usart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/system/clk/sys_clk_compatibility.h"
             ex="false"
             overriding="false">
@@ -10452,6 +10844,42 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/command/src/sys_command.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/command/sys_command.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_uart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/src/sys_console_uart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/console/sys_console.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/debug/src/sys_debug.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/debug/src/sys_debug_local.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/devcon/src/sys_devcon_cache.h"
             ex="true"
@@ -10516,6 +10944,10 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/dma/sys_dma.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/reset/src/sys_reset.c"
             ex="true"

@@ -58,8 +58,8 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include <stddef.h>                     // Defines NULL
 #include <stdbool.h>                    // Defines true
 #include <stdlib.h>                     // Defines EXIT_FAILURE
-#include "system/common/sys_module.h"   // SYS function prototypes
-
+#include "system/reset/sys_reset.h"
+#include "system/command/sys_command.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -67,16 +67,30 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // *****************************************************************************
 // *****************************************************************************
 
+#define MAJOR_VERSION       1
+#define MINOR_VERSION       1
+#define PATCH_VERSION       0
+
 int main ( void )
 {
     /* Initialize all MPLAB Harmony modules, including application(s). */
     SYS_Initialize ( NULL );
 
+    RESET_REASON reason = SYS_RESET_ReasonGet();
+    SYS_RESET_ReasonClear(reason);
+
+    SYS_CONSOLE_PRINT(
+        "blinky_leds v%u.%u.%u, reset: 0x%08x\r\n",
+        MAJOR_VERSION,
+        MINOR_VERSION,
+        PATCH_VERSION,
+        reason
+    );
+
     while ( true )
     {
         /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
-
     }
 
     /* Execution should not come here during normal operation */
@@ -84,8 +98,5 @@ int main ( void )
     return ( EXIT_FAILURE );
 }
 
-
-/*******************************************************************************
- End of File
-*/
+// vim: tabstop=4 shiftwidth=4 expandtab
 
