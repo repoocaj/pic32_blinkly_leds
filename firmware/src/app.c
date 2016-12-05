@@ -82,6 +82,13 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 APP_DATA appData;
 
+#define FLASH_PAGE_SIZE_MINUS_1 0x3fff
+#define FLASH_ERASE_PATTERN     0xff
+
+uint8_t NVMWriteBuffer[FLASH_PAGE_SIZE_MINUS_1 + 1] =
+{
+    [0 ... FLASH_PAGE_SIZE_MINUS_1] = FLASH_ERASE_PATTERN
+};
 
 // *****************************************************************************
 // *****************************************************************************
@@ -100,6 +107,32 @@ void TimerCallBack(uintptr_t context, uint32_t tickCount)
     
     /* Service the WDT */
     SYS_WDT_TimerClear();
+}
+
+/* Called from an ISR.  Don't do anything that you can't do in an ISR. */
+void NVM_EventHandler(
+    DRV_NVM_EVENT event,
+    DRV_NVM_COMMAND_HANDLE commandHandle,
+    uintptr_t context
+)
+{
+    switch (event)
+    {
+        case DRV_NVM_EVENT_COMMAND_COMPLETE:
+        {
+            break;
+        }
+
+        case DRV_NVM_EVENT_COMMAND_ERROR:
+        {
+            break;
+        }
+
+        default:
+        {
+            break;
+        }
+    }
 }
 
 // *****************************************************************************
@@ -137,7 +170,7 @@ void hex_dump(void * start)
     int i,j;
     uint8_t * ptr = (uint8_t *)start;
 
-    for (i = 0; i < 16; i++)
+    for (i = 0; i < 2; i++)
     {
         SYS_CONSOLE_PRINT("0x%08x: ", ptr);
         for(j = 0; j < 16; j++, ptr++)
@@ -188,13 +221,85 @@ void APP_Tasks ( void )
         /* Initial state is to create the timer object for periodic alarm */
         case APP_STATE_TIMER_OBJECT_CREATE:
         {
+            uint8_t * nvm_addr = boot_launcher__get_NVM_base_address();
+
             appData.tmrServiceHandle = SYS_TMR_ObjectCreate(APP_LED_BLINK_DELAY, 1, TimerCallBack, SYS_TMR_FLAG_PERIODIC);
             if(SYS_TMR_HANDLE_INVALID != appData.tmrServiceHandle)
             {
                 appData.state = APP_STATE_IDLE;
             }
 
-            hex_dump(boot_launcher__get_NVM_base_address());
+            appData.nvmHandle = DRV_NVM_Open(0, DRV_IO_INTENT_READWRITE);
+            if (DRV_HANDLE_INVALID == appData.nvmHandle)
+            {
+                SYS_CONSOLE_PRINT("Error: Can't open NVM driver\r\n");
+            }
+
+            /* Register for NVM driver events */
+            DRV_NVM_EventHandlerSet(appData.nvmHandle, NVM_EventHandler, 1);
+
+            /* Read the NVM Media Geometry. */
+            appData.nvmGeometry = DRV_NVM_GeometryGet(appData.nvmHandle);
+            if (NULL == appData.nvmGeometry)
+            {
+                SYS_CONSOLE_PRINT("Error: Can't get NVM geometry\r\n");
+            }
+
+            /* Print NVM geometry */
+            SYS_CONSOLE_PRINT(
+                "NVM:\r\n"
+                " mediaProperty 0x%08x\r\n"
+                " numReadRegions  %d\r\n"
+                "  blocksize      %d\r\n"
+                "  numBlocks      %d\r\n"
+                " numWriteRegions %d\r\n"
+                "  blocksize      %d\r\n"
+                "  numBlocks      %d\r\n"
+                " numEraseRegions %d\r\n"
+                "  blocksize      %d\r\n"
+                "  numBlocks      %d\r\n"
+                " DRV_NVM_ROW_SIZE %d\r\n"
+                " DRV_NVM_PAGE_SIZE %d\r\n",
+                appData.nvmGeometry->mediaProperty,
+                appData.nvmGeometry->numReadRegions,
+                appData.nvmGeometry->geometryTable[0].blockSize,
+                appData.nvmGeometry->geometryTable[0].numBlocks,
+                appData.nvmGeometry->numWriteRegions,
+                appData.nvmGeometry->geometryTable[1].blockSize,
+                appData.nvmGeometry->geometryTable[1].numBlocks,
+                appData.nvmGeometry->numEraseRegions,
+                appData.nvmGeometry->geometryTable[2].blockSize,
+                appData.nvmGeometry->geometryTable[2].numBlocks,
+                DRV_NVM_ROW_SIZE,
+                DRV_NVM_PAGE_SIZE
+            );
+
+            hex_dump(nvm_addr);
+
+            if (*nvm_addr == 0xff)
+            {
+                SYS_CONSOLE_PRINT("Uninitialized NVM\r\n");
+
+                uint32_t * p = (uint32_t *) &NVMWriteBuffer;
+                *p = 0xdeadbeef;
+
+                /* Write the current contents of the write buffer to NVM */
+                DRV_NVM_EraseWrite(
+                    appData.nvmHandle,
+                    &appData.nvmCmdHandle,
+                    &NVMWriteBuffer,
+                    0,
+                    1
+                );
+                if (appData.nvmCmdHandle == DRV_NVM_COMMAND_HANDLE_INVALID)
+                {
+                    SYS_CONSOLE_PRINT("Unabled to write NVM\r\n");
+                }
+                else
+                {
+                    SYS_CONSOLE_PRINT("Writing 0x%08x to NVM\r\n", *p);
+                }
+            }
             break;
         }
 

@@ -117,6 +117,15 @@ typedef struct
     /* The application's current state */
     APP_STATES state;
 
+    /* Handle to the NVM driver */
+    DRV_HANDLE nvmHandle;
+
+    /* Command handle to store most recent command */
+    DRV_NVM_COMMAND_HANDLE nvmCmdHandle;
+
+    /* Pointer to NVM geometry description */
+    SYS_FS_MEDIA_GEOMETRY *nvmGeometry;
+
     SYS_TMR_HANDLE tmrServiceHandle;
 
     int count;

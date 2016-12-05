@@ -312,7 +312,7 @@ void SYS_Initialize ( void* data )
     SYS_INT_VectorSubprioritySet(INT_VECTOR_FLASH, INT_SUBPRIORITY_LEVEL0);
 
     /* Initialize the NVM Driver */
-    //drvNvmInit.mediaStartAddress = (uint32_t)data;
+    drvNvmInit.mediaStartAddress = (uint32_t)data;
     sysObj.drvNvm = DRV_NVM_Initialize(DRV_NVM_INDEX_0, (SYS_MODULE_INIT *)&drvNvmInit);
 
     sysObj.drvTmr0 = DRV_TMR_Initialize(DRV_TMR_INDEX_0, (SYS_MODULE_INIT *)&drvTmr0InitData);

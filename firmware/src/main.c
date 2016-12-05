@@ -68,7 +68,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // *****************************************************************************
 // *****************************************************************************
 
-#define MAJOR_VERSION       1
+#define MAJOR_VERSION       2
 #define MINOR_VERSION       1
 #define PATCH_VERSION       0
 
