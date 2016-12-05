@@ -120,6 +120,46 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // Section: Driver Initialization Data
 // *****************************************************************************
 // *****************************************************************************
+// <editor-fold defaultstate="collapsed" desc="DRV_NVM Initialization Data">
+/*** FLASH Driver Initialization Data ***/
+SYS_FS_MEDIA_REGION_GEOMETRY NVMGeometryTable[3] = 
+{
+    {
+        .blockSize = 1,
+        .numBlocks = (DRV_NVM_MEDIA_SIZE * 1024),
+    },
+    {
+       .blockSize = DRV_NVM_ROW_SIZE,
+       .numBlocks = ((DRV_NVM_MEDIA_SIZE * 1024)/DRV_NVM_ROW_SIZE)
+    },
+    {
+       .blockSize = DRV_NVM_PAGE_SIZE,
+       .numBlocks = ((DRV_NVM_MEDIA_SIZE * 1024)/DRV_NVM_PAGE_SIZE)
+    }
+};
+
+const SYS_FS_MEDIA_GEOMETRY NVMGeometry = 
+{
+    .mediaProperty = SYS_FS_MEDIA_WRITE_IS_BLOCKING,
+    .numReadRegions = 1,
+    .numWriteRegions = 1,
+    .numEraseRegions = 1,
+    .geometryTable = (SYS_FS_MEDIA_REGION_GEOMETRY *)&NVMGeometryTable
+};
+
+DRV_NVM_INIT drvNvmInit =
+{
+    .moduleInit.sys.powerState = SYS_MODULE_POWER_RUN_FULL,
+    .nvmID = NVM_ID_0,
+    .interruptSource = INT_SOURCE_FLASH_CONTROL,
+
+    .mediaStartAddress = 0xbd0f4000,
+    .nvmMediaGeometry = (SYS_FS_MEDIA_GEOMETRY *)&NVMGeometry
+
+};
+
+
+// </editor-fold>
 // <editor-fold defaultstate="collapsed" desc="DRV_Timer Initialization Data">
 /*** TMR Driver Initialization Data ***/
 
@@ -265,6 +305,15 @@ void SYS_Initialize ( void* data )
     BSP_Initialize();        
 
     /* Initialize Drivers */
+    /* Configure the Flash Controller Interrupt Priority */
+    SYS_INT_VectorPrioritySet(INT_VECTOR_FLASH, INT_PRIORITY_LEVEL3);
+
+    /* Configure the Flash Controller Interrupt Sub Priority */
+    SYS_INT_VectorSubprioritySet(INT_VECTOR_FLASH, INT_SUBPRIORITY_LEVEL0);
+
+    /* Initialize the NVM Driver */
+    //drvNvmInit.mediaStartAddress = (uint32_t)data;
+    sysObj.drvNvm = DRV_NVM_Initialize(DRV_NVM_INDEX_0, (SYS_MODULE_INIT *)&drvNvmInit);
 
     sysObj.drvTmr0 = DRV_TMR_Initialize(DRV_TMR_INDEX_0, (SYS_MODULE_INIT *)&drvTmr0InitData);
  

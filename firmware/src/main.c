@@ -75,7 +75,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 int main ( void )
 {
     /* Initialize all MPLAB Harmony modules, including application(s). */
-    SYS_Initialize ( NULL );
+    SYS_Initialize(boot_launcher__get_NVM_base_address());
 
     RESET_REASON reason = SYS_RESET_ReasonGet();
     SYS_RESET_ReasonClear(reason);

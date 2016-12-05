@@ -95,7 +95,13 @@ void __ISR(_UART1_FAULT_VECTOR, ipl1AUTO) _IntHandlerDrvUsartErrorInstance0(void
  
 
  
-  
+ void __ISR(_FLASH_CONTROL_VECTOR, ipl3AUTO) _IntHandlerDrvNvm (void)
+{
+    DRV_NVM_Tasks(sysObj.drvNvm);
+
+}
+
+ 
 /*******************************************************************************
  End of File
 */

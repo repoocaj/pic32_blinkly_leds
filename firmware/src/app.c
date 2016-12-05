@@ -131,6 +131,23 @@ void delay_us(uint32_t us)
         ;
     
 }
+
+void hex_dump(void * start)
+{
+    int i,j;
+    uint8_t * ptr = (uint8_t *)start;
+
+    for (i = 0; i < 16; i++)
+    {
+        SYS_CONSOLE_PRINT("0x%08x: ", ptr);
+        for(j = 0; j < 16; j++, ptr++)
+        {
+            SYS_CONSOLE_PRINT("%02x ", *ptr);
+        }
+        SYS_CONSOLE_PRINT("\r\n");
+    }
+}
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Initialization and State Machine Functions
@@ -176,6 +193,8 @@ void APP_Tasks ( void )
             {
                 appData.state = APP_STATE_IDLE;
             }
+
+            hex_dump(boot_launcher__get_NVM_base_address());
             break;
         }
 

@@ -223,6 +223,24 @@ extern "C" {
 // Section: Driver Configuration
 // *****************************************************************************
 // *****************************************************************************
+
+/*** NVM Driver Configuration ***/
+
+#define DRV_NVM_INSTANCES_NUMBER     	1
+#define DRV_NVM_CLIENTS_NUMBER        	1
+#define DRV_NVM_BUFFER_OBJECT_NUMBER  	5
+
+#define DRV_NVM_INTERRUPT_MODE        	true
+#define DRV_NVM_INTERRUPT_SOURCE      	INT_SOURCE_FLASH_CONTROL
+
+#define DRV_NVM_MEDIA_SIZE              32
+#define DRV_NVM_MEDIA_START_ADDRESS     0xbd0f4000
+
+#define DRV_NVM_ERASE_WRITE_ENABLE
+
+
+
+
 /*** Timer Driver Configuration ***/
 #define DRV_TMR_INTERRUPT_MODE             false
 #define DRV_TMR_INSTANCES_NUMBER           1

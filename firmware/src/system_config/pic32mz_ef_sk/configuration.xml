@@ -74,6 +74,10 @@
         <Path>Source Files/framework/system/console/src</Path>
       </File>
       <File>
+        <Name>sys_fs.h</Name>
+        <Path>Header Files/framework/system/fs</Path>
+      </File>
+      <File>
         <Name>sys_reset_mapping.h</Name>
         <Path>Header Files/framework/system/reset/src</Path>
       </File>
@@ -130,8 +134,20 @@
         <Path>Header Files/framework/system/console</Path>
       </File>
       <File>
+        <Name>sys_fs_media_manager.h</Name>
+        <Path>Header Files/framework/system/fs</Path>
+      </File>
+      <File>
+        <Name>drv_nvm_local.h</Name>
+        <Path>Header Files/framework/driver/nvm/src</Path>
+      </File>
+      <File>
         <Name>sys_int.h</Name>
         <Path>Header Files/framework/system/int</Path>
+      </File>
+      <File>
+        <Name>drv_nvm_variant_mapping.h</Name>
+        <Path>Header Files/framework/driver/nvm/src</Path>
       </File>
       <File>
         <Name>sys_wdt_local.h</Name>
@@ -242,8 +258,16 @@
         <Path>Header Files/framework/osal</Path>
       </File>
       <File>
+        <Name>drv_nvm_erasewrite.c</Name>
+        <Path>Source Files/framework/driver/nvm/src/dynamic</Path>
+      </File>
+      <File>
         <Name>sys_wdt.h</Name>
         <Path>Header Files/framework/system/wdt</Path>
+      </File>
+      <File>
+        <Name>drv_nvm.c</Name>
+        <Path>Source Files/framework/driver/nvm/src/dynamic</Path>
       </File>
       <File>
         <Name>sys_devcon.h</Name>
@@ -252,6 +276,10 @@
       <File>
         <Name>sys_debug.c</Name>
         <Path>Source Files/framework/system/debug/src</Path>
+      </File>
+      <File>
+        <Name>drv_nvm.h</Name>
+        <Path>Header Files/framework/driver/nvm</Path>
       </File>
       <File>
         <Name>sys_debug.h</Name>
@@ -295,7 +323,7 @@
       <Template>
         <Name>system_init.c</Name>
         <Path>Source Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>BFA0E5E8B8DB4F4D843A63D9FE713579</Checksum>
+        <Checksum>6F25B006942D0A5D5EECEB3B608F82D1</Checksum>
       </Template>
       <Template>
         <Name>sys_clk_static.c</Name>
@@ -305,12 +333,12 @@
       <Template>
         <Name>system_interrupt.c</Name>
         <Path>Source Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>ECC4BD4E38AD439D87A79F7A0D9DF46B</Checksum>
+        <Checksum>3ED493CB134710B30767D389E477B855</Checksum>
       </Template>
       <Template>
         <Name>system_config.h</Name>
         <Path>Header Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>16D2F2986D4220882DF9A345519F254C</Checksum>
+        <Checksum>01E817AEC30589BC59E318D0AE62B5ED</Checksum>
       </Template>
       <Template>
         <Name>app.c</Name>
@@ -333,7 +361,7 @@
       <Template>
         <Name>system_definitions.h</Name>
         <Path>Header Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>31542216DDBFDEB43F239DA33EDE187B</Checksum>
+        <Checksum>EDC2597FE8C7FA7FFF153CDDD15A9C65</Checksum>
       </Template>
       <Template>
         <Name>bsp.h</Name>
