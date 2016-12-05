@@ -1,0 +1,55 @@
+#
+# Generated - do not edit!
+#
+# NOCDDL
+#
+CND_BASEDIR=`pwd`
+# pic32mx_eth_sk configuration
+CND_ARTIFACT_DIR_pic32mx_eth_sk=dist/pic32mx_eth_sk/production
+CND_ARTIFACT_NAME_pic32mx_eth_sk=blinky_leds.X.production.hex
+CND_ARTIFACT_PATH_pic32mx_eth_sk=dist/pic32mx_eth_sk/production/blinky_leds.X.production.hex
+CND_PACKAGE_DIR_pic32mx_eth_sk=${CND_DISTDIR}/pic32mx_eth_sk/package
+CND_PACKAGE_NAME_pic32mx_eth_sk=blinkyleds.x.tar
+CND_PACKAGE_PATH_pic32mx_eth_sk=${CND_DISTDIR}/pic32mx_eth_sk/package/blinkyleds.x.tar
+# pic32mz_ef_sk configuration
+CND_ARTIFACT_DIR_pic32mz_ef_sk=dist/pic32mz_ef_sk/production
+CND_ARTIFACT_NAME_pic32mz_ef_sk=blinky_leds.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_ef_sk=dist/pic32mz_ef_sk/production/blinky_leds.X.production.hex
+CND_PACKAGE_DIR_pic32mz_ef_sk=${CND_DISTDIR}/pic32mz_ef_sk/package
+CND_PACKAGE_NAME_pic32mz_ef_sk=blinkyleds.x.tar
+CND_PACKAGE_PATH_pic32mz_ef_sk=${CND_DISTDIR}/pic32mz_ef_sk/package/blinkyleds.x.tar
+# pic32mz_da_sk configuration
+CND_ARTIFACT_DIR_pic32mz_da_sk=dist/pic32mz_da_sk/production
+CND_ARTIFACT_NAME_pic32mz_da_sk=blinky_leds.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_da_sk=dist/pic32mz_da_sk/production/blinky_leds.X.production.hex
+CND_PACKAGE_DIR_pic32mz_da_sk=${CND_DISTDIR}/pic32mz_da_sk/package
+CND_PACKAGE_NAME_pic32mz_da_sk=blinkyleds.x.tar
+CND_PACKAGE_PATH_pic32mz_da_sk=${CND_DISTDIR}/pic32mz_da_sk/package/blinkyleds.x.tar
+# pic32mz_ef_sk_16b configuration
+CND_ARTIFACT_DIR_pic32mz_ef_sk_16b=dist/pic32mz_ef_sk_16b/production
+CND_ARTIFACT_NAME_pic32mz_ef_sk_16b=blinky_leds.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_ef_sk_16b=dist/pic32mz_ef_sk_16b/production/blinky_leds.X.production.hex
+CND_PACKAGE_DIR_pic32mz_ef_sk_16b=${CND_DISTDIR}/pic32mz_ef_sk_16b/package
+CND_PACKAGE_NAME_pic32mz_ef_sk_16b=blinkyleds.x.tar
+CND_PACKAGE_PATH_pic32mz_ef_sk_16b=${CND_DISTDIR}/pic32mz_ef_sk_16b/package/blinkyleds.x.tar
+# pic32mk_evk configuration
+CND_ARTIFACT_DIR_pic32mk_evk=dist/pic32mk_evk/production
+CND_ARTIFACT_NAME_pic32mk_evk=blinky_leds.X.production.hex
+CND_ARTIFACT_PATH_pic32mk_evk=dist/pic32mk_evk/production/blinky_leds.X.production.hex
+CND_PACKAGE_DIR_pic32mk_evk=${CND_DISTDIR}/pic32mk_evk/package
+CND_PACKAGE_NAME_pic32mk_evk=blinkyleds.x.tar
+CND_PACKAGE_PATH_pic32mk_evk=${CND_DISTDIR}/pic32mk_evk/package/blinkyleds.x.tar
+# pic32wk_sk configuration
+CND_ARTIFACT_DIR_pic32wk_sk=dist/pic32wk_sk/production
+CND_ARTIFACT_NAME_pic32wk_sk=blinky_leds.X.production.hex
+CND_ARTIFACT_PATH_pic32wk_sk=dist/pic32wk_sk/production/blinky_leds.X.production.hex
+CND_PACKAGE_DIR_pic32wk_sk=${CND_DISTDIR}/pic32wk_sk/package
+CND_PACKAGE_NAME_pic32wk_sk=blinkyleds.x.tar
+CND_PACKAGE_PATH_pic32wk_sk=${CND_DISTDIR}/pic32wk_sk/package/blinkyleds.x.tar
+# pic32mx_xlp_sk configuration
+CND_ARTIFACT_DIR_pic32mx_xlp_sk=dist/pic32mx_xlp_sk/production
+CND_ARTIFACT_NAME_pic32mx_xlp_sk=blinky_leds.X.production.hex
+CND_ARTIFACT_PATH_pic32mx_xlp_sk=dist/pic32mx_xlp_sk/production/blinky_leds.X.production.hex
+CND_PACKAGE_DIR_pic32mx_xlp_sk=${CND_DISTDIR}/pic32mx_xlp_sk/package
+CND_PACKAGE_NAME_pic32mx_xlp_sk=blinkyleds.x.tar
+CND_PACKAGE_PATH_pic32mx_xlp_sk=${CND_DISTDIR}/pic32mx_xlp_sk/package/blinkyleds.x.tar
