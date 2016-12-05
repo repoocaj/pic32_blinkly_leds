@@ -58,6 +58,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "debug_flags.h"
 #include "system/command/sys_command.h"
 #include "system/wdt/sys_wdt.h"
+#include "version.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -85,10 +86,20 @@ APP_DATA appData;
 #define FLASH_PAGE_SIZE_MINUS_1 0x3fff
 #define FLASH_ERASE_PATTERN     0xff
 
-uint8_t NVMWriteBuffer[FLASH_PAGE_SIZE_MINUS_1 + 1] =
+typedef struct {
+    uint32_t    valid;
+    uint8_t     major;
+    uint8_t     minor;
+    uint8_t     patch;
+} nvm_t;
+
+uint8_t NVMBuffer[FLASH_PAGE_SIZE_MINUS_1 + 1] =
 {
     [0 ... FLASH_PAGE_SIZE_MINUS_1] = FLASH_ERASE_PATTERN
 };
+
+volatile nvm_t * NVMRead;
+nvm_t * NVMWrite = (nvm_t *)&NVMBuffer;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -165,12 +176,12 @@ void delay_us(uint32_t us)
     
 }
 
-void hex_dump(void * start)
+void hex_dump(volatile void * start)
 {
     int i,j;
     uint8_t * ptr = (uint8_t *)start;
 
-    for (i = 0; i < 2; i++)
+    for (i = 0; i < 1; i++)
     {
         SYS_CONSOLE_PRINT("0x%08x: ", ptr);
         for(j = 0; j < 16; j++, ptr++)
@@ -221,7 +232,7 @@ void APP_Tasks ( void )
         /* Initial state is to create the timer object for periodic alarm */
         case APP_STATE_TIMER_OBJECT_CREATE:
         {
-            uint8_t * nvm_addr = boot_launcher__get_NVM_base_address();
+            NVMRead = boot_launcher__get_NVM_base_address();
 
             appData.tmrServiceHandle = SYS_TMR_ObjectCreate(APP_LED_BLINK_DELAY, 1, TimerCallBack, SYS_TMR_FLAG_PERIODIC);
             if(SYS_TMR_HANDLE_INVALID != appData.tmrServiceHandle)
@@ -274,20 +285,22 @@ void APP_Tasks ( void )
                 DRV_NVM_PAGE_SIZE
             );
 
-            hex_dump(nvm_addr);
+            hex_dump(NVMRead);
 
-            if (*nvm_addr == 0xff)
+            if (NVMRead->valid != 0xdeadbeef)
             {
                 SYS_CONSOLE_PRINT("Uninitialized NVM\r\n");
 
-                uint32_t * p = (uint32_t *) &NVMWriteBuffer;
-                *p = 0xdeadbeef;
+                NVMWrite->valid = 0xdeadbeef;
+                NVMWrite->major = 0x80 | MAJOR_VERSION;
+                NVMWrite->minor = 0x40 | MINOR_VERSION;
+                NVMWrite->patch = 0x20 | PATCH_VERSION;
 
                 /* Write the current contents of the write buffer to NVM */
                 DRV_NVM_EraseWrite(
                     appData.nvmHandle,
                     &appData.nvmCmdHandle,
-                    &NVMWriteBuffer,
+                    NVMWrite,
                     0,
                     1
                 );
@@ -297,7 +310,7 @@ void APP_Tasks ( void )
                 }
                 else
                 {
-                    SYS_CONSOLE_PRINT("Writing 0x%08x to NVM\r\n", *p);
+                    SYS_CONSOLE_PRINT("NVM Initialized\r\n");
                 }
             }
             break;
@@ -307,7 +320,14 @@ void APP_Tasks ( void )
          * so nothing is there to be done in this state */
         case APP_STATE_IDLE:
         {
-            if (appData.count > 120)
+            static bool printed = false;
+
+            if (!printed && (appData.count > 100))
+            {
+                printed = true;
+                hex_dump(NVMRead);
+            }
+            else if (appData.count > 120)
             {
                 BSP_LEDOn(BSP_LED_2);
                 SYS_CONSOLE_PRINT("Upgrade to: %s\r\n", UPGRADE_FILE);

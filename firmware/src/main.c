@@ -61,16 +61,13 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "system/reset/sys_reset.h"
 #include "system/command/sys_command.h"
 #include "boot_launcher.h"
+#include "version.h"
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: Main Entry Point
 // *****************************************************************************
 // *****************************************************************************
-
-#define MAJOR_VERSION       2
-#define MINOR_VERSION       1
-#define PATCH_VERSION       0
 
 int main ( void )
 {
