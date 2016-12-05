@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../src/system_config/pic32mz_ef_sk/bsp/bsp.c ../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c ../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c ../src/system_config/pic32mz_ef_sk/system_init.c ../src/system_config/pic32mz_ef_sk/system_interrupt.c ../src/system_config/pic32mz_ef_sk/system_exceptions.c ../src/system_config/pic32mz_ef_sk/system_tasks.c ../src/app.c ../src/main.c ../../../../../../../framework/driver/tmr/src/dynamic/drv_tmr.c ../../../../../../../framework/system/devcon/src/sys_devcon_pic32mz.c ../../../../../../../framework/system/devcon/src/sys_devcon_cache_pic32mz.S ../../../../../../../framework/system/devcon/src/sys_devcon.c ../../../../../../../framework/system/int/src/sys_int_pic32.c ../../../../../../../framework/system/tmr/src/sys_tmr.c
+SOURCEFILES_QUOTED_IF_SPACED=../src/app.c ../src/main.c ../../../../../../../framework/driver/tmr/src/dynamic/drv_tmr.c ../../../../../../../framework/system/devcon/src/sys_devcon_pic32mz.c ../../../../../../../framework/system/devcon/src/sys_devcon_cache_pic32mz.S ../../../../../../../framework/system/devcon/src/sys_devcon.c ../../../../../../../framework/system/int/src/sys_int_pic32.c ../../../../../../../framework/system/tmr/src/sys_tmr.c ../src/boot_launcher.c ../src/debug_flags.c ../../../../../../../framework/system/reset/src/sys_reset.c ../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c ../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c ../src/system_config/pic32mz_ef_sk/bsp/bsp.c ../src/system_config/pic32mz_ef_sk/system_init.c ../src/system_config/pic32mz_ef_sk/system_interrupt.c ../src/system_config/pic32mz_ef_sk/system_exceptions.c ../src/system_config/pic32mz_ef_sk/system_tasks.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/354129722/bsp.o ${OBJECTDIR}/_ext/571564127/sys_clk_static.o ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o ${OBJECTDIR}/_ext/849053718/system_init.o ${OBJECTDIR}/_ext/849053718/system_interrupt.o ${OBJECTDIR}/_ext/849053718/system_exceptions.o ${OBJECTDIR}/_ext/849053718/system_tasks.o ${OBJECTDIR}/_ext/1360937237/app.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1085120521/drv_tmr.o ${OBJECTDIR}/_ext/1424708930/sys_devcon_pic32mz.o ${OBJECTDIR}/_ext/1424708930/sys_devcon_cache_pic32mz.o ${OBJECTDIR}/_ext/1424708930/sys_devcon.o ${OBJECTDIR}/_ext/1140991836/sys_int_pic32.o ${OBJECTDIR}/_ext/1137870/sys_tmr.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/354129722/bsp.o.d ${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d ${OBJECTDIR}/_ext/849053718/system_init.o.d ${OBJECTDIR}/_ext/849053718/system_interrupt.o.d ${OBJECTDIR}/_ext/849053718/system_exceptions.o.d ${OBJECTDIR}/_ext/849053718/system_tasks.o.d ${OBJECTDIR}/_ext/1360937237/app.o.d ${OBJECTDIR}/_ext/1360937237/main.o.d ${OBJECTDIR}/_ext/1085120521/drv_tmr.o.d ${OBJECTDIR}/_ext/1424708930/sys_devcon_pic32mz.o.d ${OBJECTDIR}/_ext/1424708930/sys_devcon_cache_pic32mz.o.d ${OBJECTDIR}/_ext/1424708930/sys_devcon.o.d ${OBJECTDIR}/_ext/1140991836/sys_int_pic32.o.d ${OBJECTDIR}/_ext/1137870/sys_tmr.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1360937237/app.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1085120521/drv_tmr.o ${OBJECTDIR}/_ext/1424708930/sys_devcon_pic32mz.o ${OBJECTDIR}/_ext/1424708930/sys_devcon_cache_pic32mz.o ${OBJECTDIR}/_ext/1424708930/sys_devcon.o ${OBJECTDIR}/_ext/1140991836/sys_int_pic32.o ${OBJECTDIR}/_ext/1137870/sys_tmr.o ${OBJECTDIR}/_ext/1360937237/boot_launcher.o ${OBJECTDIR}/_ext/1360937237/debug_flags.o ${OBJECTDIR}/_ext/1788278276/sys_reset.o ${OBJECTDIR}/_ext/571564127/sys_clk_static.o ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o ${OBJECTDIR}/_ext/354129722/bsp.o ${OBJECTDIR}/_ext/849053718/system_init.o ${OBJECTDIR}/_ext/849053718/system_interrupt.o ${OBJECTDIR}/_ext/849053718/system_exceptions.o ${OBJECTDIR}/_ext/849053718/system_tasks.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1360937237/app.o.d ${OBJECTDIR}/_ext/1360937237/main.o.d ${OBJECTDIR}/_ext/1085120521/drv_tmr.o.d ${OBJECTDIR}/_ext/1424708930/sys_devcon_pic32mz.o.d ${OBJECTDIR}/_ext/1424708930/sys_devcon_cache_pic32mz.o.d ${OBJECTDIR}/_ext/1424708930/sys_devcon.o.d ${OBJECTDIR}/_ext/1140991836/sys_int_pic32.o.d ${OBJECTDIR}/_ext/1137870/sys_tmr.o.d ${OBJECTDIR}/_ext/1360937237/boot_launcher.o.d ${OBJECTDIR}/_ext/1360937237/debug_flags.o.d ${OBJECTDIR}/_ext/1788278276/sys_reset.o.d ${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d ${OBJECTDIR}/_ext/354129722/bsp.o.d ${OBJECTDIR}/_ext/849053718/system_init.o.d ${OBJECTDIR}/_ext/849053718/system_interrupt.o.d ${OBJECTDIR}/_ext/849053718/system_exceptions.o.d ${OBJECTDIR}/_ext/849053718/system_tasks.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/354129722/bsp.o ${OBJECTDIR}/_ext/571564127/sys_clk_static.o ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o ${OBJECTDIR}/_ext/849053718/system_init.o ${OBJECTDIR}/_ext/849053718/system_interrupt.o ${OBJECTDIR}/_ext/849053718/system_exceptions.o ${OBJECTDIR}/_ext/849053718/system_tasks.o ${OBJECTDIR}/_ext/1360937237/app.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1085120521/drv_tmr.o ${OBJECTDIR}/_ext/1424708930/sys_devcon_pic32mz.o ${OBJECTDIR}/_ext/1424708930/sys_devcon_cache_pic32mz.o ${OBJECTDIR}/_ext/1424708930/sys_devcon.o ${OBJECTDIR}/_ext/1140991836/sys_int_pic32.o ${OBJECTDIR}/_ext/1137870/sys_tmr.o
+OBJECTFILES=${OBJECTDIR}/_ext/1360937237/app.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1085120521/drv_tmr.o ${OBJECTDIR}/_ext/1424708930/sys_devcon_pic32mz.o ${OBJECTDIR}/_ext/1424708930/sys_devcon_cache_pic32mz.o ${OBJECTDIR}/_ext/1424708930/sys_devcon.o ${OBJECTDIR}/_ext/1140991836/sys_int_pic32.o ${OBJECTDIR}/_ext/1137870/sys_tmr.o ${OBJECTDIR}/_ext/1360937237/boot_launcher.o ${OBJECTDIR}/_ext/1360937237/debug_flags.o ${OBJECTDIR}/_ext/1788278276/sys_reset.o ${OBJECTDIR}/_ext/571564127/sys_clk_static.o ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o ${OBJECTDIR}/_ext/354129722/bsp.o ${OBJECTDIR}/_ext/849053718/system_init.o ${OBJECTDIR}/_ext/849053718/system_interrupt.o ${OBJECTDIR}/_ext/849053718/system_exceptions.o ${OBJECTDIR}/_ext/849053718/system_tasks.o
 
 # Source Files
-SOURCEFILES=../src/system_config/pic32mz_ef_sk/bsp/bsp.c ../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c ../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c ../src/system_config/pic32mz_ef_sk/system_init.c ../src/system_config/pic32mz_ef_sk/system_interrupt.c ../src/system_config/pic32mz_ef_sk/system_exceptions.c ../src/system_config/pic32mz_ef_sk/system_tasks.c ../src/app.c ../src/main.c ../../../../../../../framework/driver/tmr/src/dynamic/drv_tmr.c ../../../../../../../framework/system/devcon/src/sys_devcon_pic32mz.c ../../../../../../../framework/system/devcon/src/sys_devcon_cache_pic32mz.S ../../../../../../../framework/system/devcon/src/sys_devcon.c ../../../../../../../framework/system/int/src/sys_int_pic32.c ../../../../../../../framework/system/tmr/src/sys_tmr.c
+SOURCEFILES=../src/app.c ../src/main.c ../../../../../../../framework/driver/tmr/src/dynamic/drv_tmr.c ../../../../../../../framework/system/devcon/src/sys_devcon_pic32mz.c ../../../../../../../framework/system/devcon/src/sys_devcon_cache_pic32mz.S ../../../../../../../framework/system/devcon/src/sys_devcon.c ../../../../../../../framework/system/int/src/sys_int_pic32.c ../../../../../../../framework/system/tmr/src/sys_tmr.c ../src/boot_launcher.c ../src/debug_flags.c ../../../../../../../framework/system/reset/src/sys_reset.c ../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c ../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c ../src/system_config/pic32mz_ef_sk/bsp/bsp.c ../src/system_config/pic32mz_ef_sk/system_init.c ../src/system_config/pic32mz_ef_sk/system_interrupt.c ../src/system_config/pic32mz_ef_sk/system_exceptions.c ../src/system_config/pic32mz_ef_sk/system_tasks.c
 
 
 CFLAGS=
@@ -114,48 +114,6 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/354129722/bsp.o: ../src/system_config/pic32mz_ef_sk/bsp/bsp.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/354129722" 
-	@${RM} ${OBJECTDIR}/_ext/354129722/bsp.o.d 
-	@${RM} ${OBJECTDIR}/_ext/354129722/bsp.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/354129722/bsp.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/354129722/bsp.o.d" -o ${OBJECTDIR}/_ext/354129722/bsp.o ../src/system_config/pic32mz_ef_sk/bsp/bsp.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/571564127/sys_clk_static.o: ../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/571564127" 
-	@${RM} ${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d 
-	@${RM} ${OBJECTDIR}/_ext/571564127/sys_clk_static.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d" -o ${OBJECTDIR}/_ext/571564127/sys_clk_static.o ../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1009894383/sys_ports_static.o: ../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1009894383" 
-	@${RM} ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d" -o ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o ../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/849053718/system_init.o: ../src/system_config/pic32mz_ef_sk/system_init.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/849053718" 
-	@${RM} ${OBJECTDIR}/_ext/849053718/system_init.o.d 
-	@${RM} ${OBJECTDIR}/_ext/849053718/system_init.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_init.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_init.o.d" -o ${OBJECTDIR}/_ext/849053718/system_init.o ../src/system_config/pic32mz_ef_sk/system_init.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/849053718/system_interrupt.o: ../src/system_config/pic32mz_ef_sk/system_interrupt.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/849053718" 
-	@${RM} ${OBJECTDIR}/_ext/849053718/system_interrupt.o.d 
-	@${RM} ${OBJECTDIR}/_ext/849053718/system_interrupt.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_interrupt.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_interrupt.o.d" -o ${OBJECTDIR}/_ext/849053718/system_interrupt.o ../src/system_config/pic32mz_ef_sk/system_interrupt.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/849053718/system_exceptions.o: ../src/system_config/pic32mz_ef_sk/system_exceptions.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/849053718" 
-	@${RM} ${OBJECTDIR}/_ext/849053718/system_exceptions.o.d 
-	@${RM} ${OBJECTDIR}/_ext/849053718/system_exceptions.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_exceptions.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_exceptions.o.d" -o ${OBJECTDIR}/_ext/849053718/system_exceptions.o ../src/system_config/pic32mz_ef_sk/system_exceptions.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/849053718/system_tasks.o: ../src/system_config/pic32mz_ef_sk/system_tasks.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/849053718" 
-	@${RM} ${OBJECTDIR}/_ext/849053718/system_tasks.o.d 
-	@${RM} ${OBJECTDIR}/_ext/849053718/system_tasks.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_tasks.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_tasks.o.d" -o ${OBJECTDIR}/_ext/849053718/system_tasks.o ../src/system_config/pic32mz_ef_sk/system_tasks.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
-	
 ${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o.d 
@@ -198,49 +156,67 @@ ${OBJECTDIR}/_ext/1137870/sys_tmr.o: ../../../../../../../framework/system/tmr/s
 	@${RM} ${OBJECTDIR}/_ext/1137870/sys_tmr.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1137870/sys_tmr.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/1137870/sys_tmr.o.d" -o ${OBJECTDIR}/_ext/1137870/sys_tmr.o ../../../../../../../framework/system/tmr/src/sys_tmr.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
 	
-else
-${OBJECTDIR}/_ext/354129722/bsp.o: ../src/system_config/pic32mz_ef_sk/bsp/bsp.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/354129722" 
-	@${RM} ${OBJECTDIR}/_ext/354129722/bsp.o.d 
-	@${RM} ${OBJECTDIR}/_ext/354129722/bsp.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/354129722/bsp.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/354129722/bsp.o.d" -o ${OBJECTDIR}/_ext/354129722/bsp.o ../src/system_config/pic32mz_ef_sk/bsp/bsp.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+${OBJECTDIR}/_ext/1360937237/boot_launcher.o: ../src/boot_launcher.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/boot_launcher.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/boot_launcher.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937237/boot_launcher.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/1360937237/boot_launcher.o.d" -o ${OBJECTDIR}/_ext/1360937237/boot_launcher.o ../src/boot_launcher.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1360937237/debug_flags.o: ../src/debug_flags.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/debug_flags.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/debug_flags.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937237/debug_flags.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/1360937237/debug_flags.o.d" -o ${OBJECTDIR}/_ext/1360937237/debug_flags.o ../src/debug_flags.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1788278276/sys_reset.o: ../../../../../../../framework/system/reset/src/sys_reset.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1788278276" 
+	@${RM} ${OBJECTDIR}/_ext/1788278276/sys_reset.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1788278276/sys_reset.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1788278276/sys_reset.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/1788278276/sys_reset.o.d" -o ${OBJECTDIR}/_ext/1788278276/sys_reset.o ../../../../../../../framework/system/reset/src/sys_reset.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
 	
 ${OBJECTDIR}/_ext/571564127/sys_clk_static.o: ../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/571564127" 
 	@${RM} ${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d 
 	@${RM} ${OBJECTDIR}/_ext/571564127/sys_clk_static.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d" -o ${OBJECTDIR}/_ext/571564127/sys_clk_static.o ../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d" -o ${OBJECTDIR}/_ext/571564127/sys_clk_static.o ../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
 	
 ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o: ../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1009894383" 
 	@${RM} ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d" -o ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o ../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d" -o ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o ../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/354129722/bsp.o: ../src/system_config/pic32mz_ef_sk/bsp/bsp.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/354129722" 
+	@${RM} ${OBJECTDIR}/_ext/354129722/bsp.o.d 
+	@${RM} ${OBJECTDIR}/_ext/354129722/bsp.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/354129722/bsp.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/354129722/bsp.o.d" -o ${OBJECTDIR}/_ext/354129722/bsp.o ../src/system_config/pic32mz_ef_sk/bsp/bsp.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
 	
 ${OBJECTDIR}/_ext/849053718/system_init.o: ../src/system_config/pic32mz_ef_sk/system_init.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/849053718" 
 	@${RM} ${OBJECTDIR}/_ext/849053718/system_init.o.d 
 	@${RM} ${OBJECTDIR}/_ext/849053718/system_init.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_init.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_init.o.d" -o ${OBJECTDIR}/_ext/849053718/system_init.o ../src/system_config/pic32mz_ef_sk/system_init.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_init.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_init.o.d" -o ${OBJECTDIR}/_ext/849053718/system_init.o ../src/system_config/pic32mz_ef_sk/system_init.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
 	
 ${OBJECTDIR}/_ext/849053718/system_interrupt.o: ../src/system_config/pic32mz_ef_sk/system_interrupt.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/849053718" 
 	@${RM} ${OBJECTDIR}/_ext/849053718/system_interrupt.o.d 
 	@${RM} ${OBJECTDIR}/_ext/849053718/system_interrupt.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_interrupt.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_interrupt.o.d" -o ${OBJECTDIR}/_ext/849053718/system_interrupt.o ../src/system_config/pic32mz_ef_sk/system_interrupt.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_interrupt.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_interrupt.o.d" -o ${OBJECTDIR}/_ext/849053718/system_interrupt.o ../src/system_config/pic32mz_ef_sk/system_interrupt.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
 	
 ${OBJECTDIR}/_ext/849053718/system_exceptions.o: ../src/system_config/pic32mz_ef_sk/system_exceptions.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/849053718" 
 	@${RM} ${OBJECTDIR}/_ext/849053718/system_exceptions.o.d 
 	@${RM} ${OBJECTDIR}/_ext/849053718/system_exceptions.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_exceptions.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_exceptions.o.d" -o ${OBJECTDIR}/_ext/849053718/system_exceptions.o ../src/system_config/pic32mz_ef_sk/system_exceptions.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_exceptions.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_exceptions.o.d" -o ${OBJECTDIR}/_ext/849053718/system_exceptions.o ../src/system_config/pic32mz_ef_sk/system_exceptions.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
 	
 ${OBJECTDIR}/_ext/849053718/system_tasks.o: ../src/system_config/pic32mz_ef_sk/system_tasks.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/849053718" 
 	@${RM} ${OBJECTDIR}/_ext/849053718/system_tasks.o.d 
 	@${RM} ${OBJECTDIR}/_ext/849053718/system_tasks.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_tasks.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_tasks.o.d" -o ${OBJECTDIR}/_ext/849053718/system_tasks.o ../src/system_config/pic32mz_ef_sk/system_tasks.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_tasks.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_tasks.o.d" -o ${OBJECTDIR}/_ext/849053718/system_tasks.o ../src/system_config/pic32mz_ef_sk/system_tasks.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
 	
+else
 ${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o.d 
@@ -282,6 +258,66 @@ ${OBJECTDIR}/_ext/1137870/sys_tmr.o: ../../../../../../../framework/system/tmr/s
 	@${RM} ${OBJECTDIR}/_ext/1137870/sys_tmr.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1137870/sys_tmr.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1137870/sys_tmr.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/1137870/sys_tmr.o.d" -o ${OBJECTDIR}/_ext/1137870/sys_tmr.o ../../../../../../../framework/system/tmr/src/sys_tmr.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1360937237/boot_launcher.o: ../src/boot_launcher.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/boot_launcher.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/boot_launcher.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937237/boot_launcher.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/1360937237/boot_launcher.o.d" -o ${OBJECTDIR}/_ext/1360937237/boot_launcher.o ../src/boot_launcher.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1360937237/debug_flags.o: ../src/debug_flags.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/debug_flags.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/debug_flags.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937237/debug_flags.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/1360937237/debug_flags.o.d" -o ${OBJECTDIR}/_ext/1360937237/debug_flags.o ../src/debug_flags.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1788278276/sys_reset.o: ../../../../../../../framework/system/reset/src/sys_reset.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1788278276" 
+	@${RM} ${OBJECTDIR}/_ext/1788278276/sys_reset.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1788278276/sys_reset.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1788278276/sys_reset.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/1788278276/sys_reset.o.d" -o ${OBJECTDIR}/_ext/1788278276/sys_reset.o ../../../../../../../framework/system/reset/src/sys_reset.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/571564127/sys_clk_static.o: ../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/571564127" 
+	@${RM} ${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d 
+	@${RM} ${OBJECTDIR}/_ext/571564127/sys_clk_static.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/571564127/sys_clk_static.o.d" -o ${OBJECTDIR}/_ext/571564127/sys_clk_static.o ../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1009894383/sys_ports_static.o: ../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1009894383" 
+	@${RM} ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/1009894383/sys_ports_static.o.d" -o ${OBJECTDIR}/_ext/1009894383/sys_ports_static.o ../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/354129722/bsp.o: ../src/system_config/pic32mz_ef_sk/bsp/bsp.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/354129722" 
+	@${RM} ${OBJECTDIR}/_ext/354129722/bsp.o.d 
+	@${RM} ${OBJECTDIR}/_ext/354129722/bsp.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/354129722/bsp.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/354129722/bsp.o.d" -o ${OBJECTDIR}/_ext/354129722/bsp.o ../src/system_config/pic32mz_ef_sk/bsp/bsp.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/849053718/system_init.o: ../src/system_config/pic32mz_ef_sk/system_init.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/849053718" 
+	@${RM} ${OBJECTDIR}/_ext/849053718/system_init.o.d 
+	@${RM} ${OBJECTDIR}/_ext/849053718/system_init.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_init.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_init.o.d" -o ${OBJECTDIR}/_ext/849053718/system_init.o ../src/system_config/pic32mz_ef_sk/system_init.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/849053718/system_interrupt.o: ../src/system_config/pic32mz_ef_sk/system_interrupt.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/849053718" 
+	@${RM} ${OBJECTDIR}/_ext/849053718/system_interrupt.o.d 
+	@${RM} ${OBJECTDIR}/_ext/849053718/system_interrupt.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_interrupt.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_interrupt.o.d" -o ${OBJECTDIR}/_ext/849053718/system_interrupt.o ../src/system_config/pic32mz_ef_sk/system_interrupt.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/849053718/system_exceptions.o: ../src/system_config/pic32mz_ef_sk/system_exceptions.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/849053718" 
+	@${RM} ${OBJECTDIR}/_ext/849053718/system_exceptions.o.d 
+	@${RM} ${OBJECTDIR}/_ext/849053718/system_exceptions.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_exceptions.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_exceptions.o.d" -o ${OBJECTDIR}/_ext/849053718/system_exceptions.o ../src/system_config/pic32mz_ef_sk/system_exceptions.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/849053718/system_tasks.o: ../src/system_config/pic32mz_ef_sk/system_tasks.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/849053718" 
+	@${RM} ${OBJECTDIR}/_ext/849053718/system_tasks.o.d 
+	@${RM} ${OBJECTDIR}/_ext/849053718/system_tasks.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/849053718/system_tasks.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/pic32mz_ef_sk" -I"../../../../../../../framework" -I"../src/system_config/pic32mz_ef_sk/framework" -I"../src/pic32mz_ef_sk" -I"../src/system_config/pic32mz_ef_sk/bsp" -Werror -Wall -MMD -MF "${OBJECTDIR}/_ext/849053718/system_tasks.o.d" -o ${OBJECTDIR}/_ext/849053718/system_tasks.o ../src/system_config/pic32mz_ef_sk/system_tasks.c    -DXPRJ_pic32mz_ef_sk=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD) 
 	
 endif
 

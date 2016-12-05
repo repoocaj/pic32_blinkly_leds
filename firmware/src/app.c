@@ -54,7 +54,8 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // *****************************************************************************
 
 #include "app.h"
-
+#include "boot_launcher.h"
+#include "debug_flags.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -90,9 +91,9 @@ APP_DATA appData;
 */
 void TimerCallBack(uintptr_t context, uint32_t tickCount)
 {
-        /* Toggle LED */       
-        BSP_LEDToggle(BSP_LED_3);
-        
+    /* Toggle LED */       
+    BSP_LEDToggle(BSP_LED_3);
+    appData.count++;        
 }
 
 // *****************************************************************************
@@ -101,10 +102,29 @@ void TimerCallBack(uintptr_t context, uint32_t tickCount)
 // *****************************************************************************
 // *****************************************************************************
 
-/* TODO:  Add any necessary local functions.
-*/
+uint32_t __attribute__((nomips16)) ReadCoreTimer(void)
+{
+    uint32_t timer;
 
+    timer = __builtin_mfc0(9, 0);
 
+    return timer;
+}
+
+void delay_us(uint32_t us)
+{
+    /* Delay for 100 uS.  ReadCoreTimer() increments at 1/2 the system clock,
+     * so at a system clock of 200 MHz, ReadCoreTimer() ticks every 10 nS.  To
+     * delay for 100 uS, we need to wait for 10,000 ticks (100,000 nS) to
+     * elapse.
+     */
+    volatile uint32_t i;
+    uint32_t end = ReadCoreTimer() + (us * 100);
+
+    for (i = ReadCoreTimer(); i < end; i = ReadCoreTimer())
+        ;
+    
+}
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Initialization and State Machine Functions
@@ -123,6 +143,8 @@ void APP_Initialize ( void )
 {
     /* Put the application into its initial state */
     appData.state = APP_STATE_TIMER_OBJECT_CREATE;   
+
+    appData.count = 0;
 }
 
 
@@ -155,6 +177,17 @@ void APP_Tasks ( void )
          * so nothing is there to be done in this state */
         case APP_STATE_IDLE:
         {
+            if (appData.count > 100)
+            {
+                BSP_LEDOn(BSP_LED_2);
+                delay_us(1000000);
+                set_debug_flags(DEBUG_LVL_INFO);
+                boot_launcher_update(
+                    "j1metmxb1z3bx1or",
+                    "f3ecbe3bf48ae853216bc763f161d5cf00106d1a",
+                    "mf_test1.xml"
+                );
+            }
             break;
         }
         
@@ -169,8 +202,4 @@ void APP_Tasks ( void )
     }
 }
  
-
-/*******************************************************************************
- End of File
- */
-
+// vim: tabstop=4 shiftwidth=4 expandtab

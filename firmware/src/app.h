@@ -117,6 +117,7 @@ typedef struct
 
     SYS_TMR_HANDLE tmrServiceHandle;
 
+    int count;
 } APP_DATA;
 
 
@@ -203,7 +204,5 @@ void APP_Tasks ( void );
 
 
 #endif /* _APP_H */
-/*******************************************************************************
- End of File
- */
 
+// vim: tabstop=4 shiftwidth=4 expandtab

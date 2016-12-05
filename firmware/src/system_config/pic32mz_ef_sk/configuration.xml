@@ -62,6 +62,10 @@
         <Path>Header Files/framework/driver/tmr/src</Path>
       </File>
       <File>
+        <Name>sys_reset.h</Name>
+        <Path>Header Files/framework/system/reset</Path>
+      </File>
+      <File>
         <Name>drv_tmr_local.h</Name>
         <Path>Header Files/framework/driver/tmr/src</Path>
       </File>
@@ -78,6 +82,14 @@
         <Path>Source Files/framework/system/devcon/src</Path>
       </File>
       <File>
+        <Name>sys_reset_local.h</Name>
+        <Path>Header Files/framework/system/reset/src</Path>
+      </File>
+      <File>
+        <Name>sys_reset.c</Name>
+        <Path>Source Files/framework/system/reset/src</Path>
+      </File>
+      <File>
         <Name>sys_tmr.h</Name>
         <Path>Header Files/framework/system/tmr</Path>
       </File>
@@ -88,6 +100,10 @@
       <File>
         <Name>osal.h</Name>
         <Path>Header Files/framework/osal</Path>
+      </File>
+      <File>
+        <Name>sys_reset_mapping.h</Name>
+        <Path>Header Files/framework/system/reset/src</Path>
       </File>
       <File>
         <Name>sys_ports.h</Name>
@@ -241,7 +257,7 @@
       <Template>
         <Name>system_definitions.h</Name>
         <Path>Header Files/app/system_config/pic32mz_ef_sk</Path>
-        <Checksum>868B68A72AFA581B8954A2AC294FD05F</Checksum>
+        <Checksum>B53AC94B4672B0F99379E81769069373</Checksum>
       </Template>
       <Template>
         <Name>bsp.h</Name>
@@ -256,10 +272,10 @@
     </Templates>
     <CompilerItems>
       <C32>
-        <Include value="E:/official/git/core/apps/examples/peripheral/ports/blinky_leds/firmware/src"/>
-        <Include value="E:/official/git/core/apps/examples/peripheral/ports/blinky_leds/firmware/src/system_config/pic32mz_ef_sk"/>
-        <Include value="E:/official/git/core/framework"/>
-        <Include value="E:/official/git/core/apps/examples/peripheral/ports/blinky_leds/firmware/src/system_config/pic32mz_ef_sk/framework"/>
+        <Include value="/home/jeffc/microchip/harmony/v2_01b/apps/examples/peripheral/ports/blinky_leds/firmware/src"/>
+        <Include value="/home/jeffc/microchip/harmony/v2_01b/apps/examples/peripheral/ports/blinky_leds/firmware/src/system_config/pic32mz_ef_sk"/>
+        <Include value="/home/jeffc/microchip/harmony/v2_01b/framework"/>
+        <Include value="/home/jeffc/microchip/harmony/v2_01b/apps/examples/peripheral/ports/blinky_leds/firmware/src/system_config/pic32mz_ef_sk/framework"/>
         <Include value="../src/system_config/pic32mz_ef_sk/bsp"/>
       </C32>
     </CompilerItems>
