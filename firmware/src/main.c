@@ -60,6 +60,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include "system/reset/sys_reset.h"
 #include "system/command/sys_command.h"
+#include "boot_launcher.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -80,11 +81,12 @@ int main ( void )
     SYS_RESET_ReasonClear(reason);
 
     SYS_CONSOLE_PRINT(
-        "blinky_leds v%u.%u.%u, reset: 0x%08x\r\n",
+        "blinky_leds v%u.%u.%u, reset: 0x%08x, NVM: 0x%08x\r\n",
         MAJOR_VERSION,
         MINOR_VERSION,
         PATCH_VERSION,
-        reason
+        reason,
+        boot_launcher__get_NVM_base_address()
     );
 
     while ( true )
