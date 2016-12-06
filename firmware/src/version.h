@@ -14,8 +14,8 @@
 #ifndef _VERSION_H    /* Guard against multiple inclusion */
 #define _VERSION_H
 
-#define MAJOR_VERSION		2
-#define MINOR_VERSION		1
+#define MAJOR_VERSION		3
+#define MINOR_VERSION		0
 #define PATCH_VERSION	    0
 
 #endif /* _VERSION_H */

@@ -101,6 +101,26 @@ uint8_t NVMBuffer[FLASH_PAGE_SIZE_MINUS_1 + 1] =
 volatile nvm_t * NVMRead;
 nvm_t * NVMWrite = (nvm_t *)&NVMBuffer;
 
+#define MAX_CIK_BYTES           40
+#define MAX_PRODUCT_ID_BYTES    16
+
+char g_CIK[MAX_CIK_BYTES + 1] = { [0 ... MAX_CIK_BYTES] = 0};
+char g_ProductID[MAX_PRODUCT_ID_BYTES + 1] = { [0 ... MAX_PRODUCT_ID_BYTES] = 0};
+
+static int _Command_SetDebug(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv);
+static int _Command_SetCIK(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv);
+static int _Command_SetProduct(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv);
+static int _Command_Upgrade(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv);
+
+// Test command table
+static const SYS_CMD_DESCRIPTOR    testCmdTbl[]=
+{
+    {"debug",       _Command_SetDebug,      ": Set the debug flags."            },
+    {"cik",         _Command_SetCIK,        ": Set CIK to use."                 },
+    {"product",     _Command_SetProduct,    ": Set the Product ID to use."      },
+    {"upgrade",     _Command_Upgrade,       ": Upgrade with a given meta file." },
+};
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
@@ -234,6 +254,13 @@ void APP_Tasks ( void )
         {
             NVMRead = boot_launcher__get_NVM_base_address();
 
+            /* create command group */
+            if (!SYS_CMD_ADDGRP(testCmdTbl, sizeof(testCmdTbl)/sizeof(*testCmdTbl), "test", ": commands"))
+            {
+                /* Complain but not a fatal error */
+                SYS_CONSOLE_PRINT("Failed to create Test Commands\r\n");
+            }
+
             appData.tmrServiceHandle = SYS_TMR_ObjectCreate(APP_LED_BLINK_DELAY, 1, TimerCallBack, SYS_TMR_FLAG_PERIODIC);
             if(SYS_TMR_HANDLE_INVALID != appData.tmrServiceHandle)
             {
@@ -322,26 +349,13 @@ void APP_Tasks ( void )
         {
             static bool printed = false;
 
-            if (!printed && (appData.count > 100))
+            if (!printed && (appData.count > 10))
             {
                 printed = true;
                 hex_dump(NVMRead);
             }
-            else if (appData.count > 120)
-            {
-                BSP_LEDOn(BSP_LED_2);
-                SYS_CONSOLE_PRINT("Upgrade to: %s\r\n", UPGRADE_FILE);
 
-                /* Wait a second */
-                delay_us(1000000);
-
-                set_debug_flags(DEBUG_LVL_INFO);
-                boot_launcher_update(
-                    "j1metmxb1z3bx1or",
-                    "f3ecbe3bf48ae853216bc763f161d5cf00106d1a",
-                    UPGRADE_FILE
-                );
-            }
+            SYS_CMD_READY_TO_READ();
             break;
         }
         
@@ -356,4 +370,151 @@ void APP_Tasks ( void )
     }
 }
  
+int _Command_SetDebug(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
+{
+    const void *cmdIoParam = pCmdIO->cmdIoParam;
+
+    if (argc != 2)
+    {
+        goto usage;
+    }
+
+    long flags = strtol(argv[1], NULL, 0);
+    set_debug_flags(flags);
+
+    SYS_CONSOLE_PRINT("debug flags set to 0x%08x\r\n", get_debug_flags());
+
+    return true;
+
+usage:
+
+    (*pCmdIO->pCmdApi->print)(cmdIoParam,
+        "Usage: %s <value>\r\n"
+        "Set system debug flags to the given value.\r\n",
+        argv[0]
+    );
+
+    return false;
+}
+
+int _Command_SetCIK(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
+{
+    const void *cmdIoParam = pCmdIO->cmdIoParam;
+
+    if (argc != 2)
+    {
+        goto usage;
+    }
+
+    int len  = strlen(argv[1]);
+    if (len != MAX_CIK_BYTES)
+    {
+        SYS_CONSOLE_PRINT(
+            "Error: A CIK has %d characters, '%s' has %d.\r\n",
+            MAX_CIK_BYTES,
+            argv[1],
+            len
+        );
+        return false;
+    }
+
+    memset(g_CIK, 0x0, MAX_CIK_BYTES + 1);
+    strncpy(g_CIK, argv[1], MAX_CIK_BYTES);
+
+    SYS_CONSOLE_PRINT("CIK: '%s'\r\n", g_CIK);
+
+    return true;
+
+usage:
+
+    (*pCmdIO->pCmdApi->print)(cmdIoParam,
+        "Usage: %s <CIK>\r\n"
+        "Stores a CIK in RAM to use when executing an update.",
+        argv[0]
+    );
+
+    return false;
+}
+
+int _Command_SetProduct(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
+{
+    const void *cmdIoParam = pCmdIO->cmdIoParam;
+
+    if (argc != 1)
+    {
+        goto usage;
+    }
+
+    int len  = strlen(argv[1]);
+    if (len != MAX_PRODUCT_ID_BYTES)
+    {
+        SYS_CONSOLE_PRINT(
+            "Error: A Product ID has %d characters, '%s' has %d.\r\n",
+            MAX_PRODUCT_ID_BYTES,
+            argv[1],
+            len
+        );
+        return false;
+    }
+
+    memset(g_ProductID, 0x0, MAX_PRODUCT_ID_BYTES + 1);
+    strncpy(g_ProductID, argv[1], MAX_PRODUCT_ID_BYTES);
+
+    SYS_CONSOLE_PRINT("Product ID: '%s'\r\n", g_ProductID);
+
+    return true;
+
+usage:
+
+    (*pCmdIO->pCmdApi->print)(cmdIoParam,
+        "Usage: %s <Product ID>\r\n"
+        "Stores a Product ID in RAM to use when executing an update.",
+        argv[0]
+    );
+
+    return false;
+}
+
+int _Command_Upgrade(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
+{
+    const void *cmdIoParam = pCmdIO->cmdIoParam;
+
+    if (argc != 1)
+    {
+        goto usage;
+    }
+
+    if (0x0 == g_ProductID[0])
+    {
+        SYS_CONSOLE_PRINT("Need to set a product ID to upgrade from.\r\n");
+    }
+
+    if (0x0 == g_CIK[0])
+    {
+        SYS_CONSOLE_PRINT("Need to set a CIK to upgrade.\r\n");
+    }
+
+    BSP_LEDOn(BSP_LED_2);
+
+    /* Wait a second */
+    delay_us(1000000);
+
+    boot_launcher_update(g_ProductID, g_CIK, argv[1]);
+
+    /* We won't return from a successful call, if we do it's an error. */
+    SYS_CONSOLE_PRINT("Error: Upgrade failed to start.\r\n");
+
+    return false;
+
+usage:
+
+    (*pCmdIO->pCmdApi->print)(cmdIoParam,
+        "Usage: %s <metafile>\r\n"
+        "Upgrades the CIK from the Product ID using the given metafile.\r\n",
+        argv[0]
+    );
+
+    return false;
+}
+
 // vim: tabstop=4 shiftwidth=4 expandtab
