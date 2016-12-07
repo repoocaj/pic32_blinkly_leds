@@ -257,6 +257,13 @@ void APP_Tasks ( void )
             strncpy(g_CIK, DEFAULT_CIK, MAX_CIK_BYTES);
             strncpy(g_ProductID, DEFAULT_PRODUCT_ID, MAX_PRODUCT_ID_BYTES);
 
+            SYS_CONSOLE_PRINT(
+                "CIK: %s\r\n"
+                "Product ID: %s\r\n",
+                g_CIK,
+                g_ProductID
+            );
+
             /* Set the NVM location to use */
             NVMRead = boot_launcher__get_NVM_base_address();
 
