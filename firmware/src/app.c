@@ -455,7 +455,7 @@ int _Command_SetProduct(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
 {
     const void *cmdIoParam = pCmdIO->cmdIoParam;
 
-    if (argc != 1)
+    if (argc != 2)
     {
         goto usage;
     }
@@ -495,7 +495,7 @@ int _Command_Upgrade(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
     const void *cmdIoParam = pCmdIO->cmdIoParam;
     bool error = false;
 
-    if (argc != 1)
+    if (argc != 2)
     {
         goto usage;
     }
