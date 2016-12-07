@@ -66,6 +66,9 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // *****************************************************************************
 // *****************************************************************************
 
+#define DEFAULT_CIK             "e58ed11accdfe84564c26381c34bc597baa72f23"
+#define DEFAULT_PRODUCT_ID      "j1metmxb1z3bx1or"
+
 // *****************************************************************************
 /* Application Data
 
@@ -229,7 +232,7 @@ void hex_dump(volatile void * start)
 void APP_Initialize ( void )
 {
     /* Put the application into its initial state */
-    appData.state = APP_STATE_TIMER_OBJECT_CREATE;   
+    appData.state = APP_STATE_INITIALIZE;
 
     appData.count = 0;
 }
@@ -248,10 +251,13 @@ void APP_Tasks ( void )
    /* Take appropriate action, depending on the current state. */
     switch (appData.state)
     {
-
-        /* Initial state is to create the timer object for periodic alarm */
-        case APP_STATE_TIMER_OBJECT_CREATE:
+        case APP_STATE_INITIALIZE:
         {
+            /* Initialize the CIK and Product ID to their default values */
+            strncpy(g_CIK, DEFAULT_CIK, MAX_CIK_BYTES);
+            strncpy(g_ProductID, DEFAULT_PRODUCT_ID, MAX_PRODUCT_ID_BYTES);
+
+            /* Set the NVM location to use */
             NVMRead = boot_launcher__get_NVM_base_address();
 
             /* create command group */
@@ -261,12 +267,14 @@ void APP_Tasks ( void )
                 SYS_CONSOLE_PRINT("Failed to create Test Commands\r\n");
             }
 
+            /* create timer object */
             appData.tmrServiceHandle = SYS_TMR_ObjectCreate(APP_LED_BLINK_DELAY, 1, TimerCallBack, SYS_TMR_FLAG_PERIODIC);
             if(SYS_TMR_HANDLE_INVALID != appData.tmrServiceHandle)
             {
                 appData.state = APP_STATE_IDLE;
             }
 
+            /* Open NVM */
             appData.nvmHandle = DRV_NVM_Open(0, DRV_IO_INTENT_READWRITE);
             if (DRV_HANDLE_INVALID == appData.nvmHandle)
             {
@@ -275,14 +283,13 @@ void APP_Tasks ( void )
 
             /* Register for NVM driver events */
             DRV_NVM_EventHandlerSet(appData.nvmHandle, NVM_EventHandler, 1);
-
+#if PRINT_NVM_GEOMETRY
             /* Read the NVM Media Geometry. */
             appData.nvmGeometry = DRV_NVM_GeometryGet(appData.nvmHandle);
             if (NULL == appData.nvmGeometry)
             {
                 SYS_CONSOLE_PRINT("Error: Can't get NVM geometry\r\n");
             }
-
             /* Print NVM geometry */
             SYS_CONSOLE_PRINT(
                 "NVM:\r\n"
@@ -311,7 +318,7 @@ void APP_Tasks ( void )
                 DRV_NVM_ROW_SIZE,
                 DRV_NVM_PAGE_SIZE
             );
-
+#endif
             hex_dump(NVMRead);
 
             if (NVMRead->valid != 0xdeadbeef)
@@ -343,8 +350,9 @@ void APP_Tasks ( void )
             break;
         }
 
-        /* LED will be toggled in Timer Callback function, 
-         * so nothing is there to be done in this state */
+        /* LED will be toggled in Timer Callback function, so nothing is there
+         * to be done in this state.
+         */
         case APP_STATE_IDLE:
         {
             static bool printed = false;
@@ -406,7 +414,7 @@ int _Command_SetCIK(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
         goto usage;
     }
 
-    int len  = strlen(argv[1]);
+    int len = strlen(argv[1]);
     if (len != MAX_CIK_BYTES)
     {
         SYS_CONSOLE_PRINT(
@@ -445,7 +453,7 @@ int _Command_SetProduct(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
         goto usage;
     }
 
-    int len  = strlen(argv[1]);
+    int len = strlen(argv[1]);
     if (len != MAX_PRODUCT_ID_BYTES)
     {
         SYS_CONSOLE_PRINT(
@@ -478,6 +486,7 @@ usage:
 int _Command_Upgrade(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
 {
     const void *cmdIoParam = pCmdIO->cmdIoParam;
+    bool error = false;
 
     if (argc != 1)
     {
@@ -487,11 +496,18 @@ int _Command_Upgrade(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
     if (0x0 == g_ProductID[0])
     {
         SYS_CONSOLE_PRINT("Need to set a product ID to upgrade from.\r\n");
+        error = true;
     }
 
     if (0x0 == g_CIK[0])
     {
         SYS_CONSOLE_PRINT("Need to set a CIK to upgrade.\r\n");
+        error = true;
+    }
+
+    if (error)
+    {
+        return false;
     }
 
     BSP_LEDOn(BSP_LED_2);
