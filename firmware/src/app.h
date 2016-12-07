@@ -69,6 +69,9 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 /* Modify this value to alter the LED blink rate */
 #define APP_LED_BLINK_DELAY     250
 
+/* Set to 1 to print the NVM geometry on startup */
+#define PRINT_NVM_GEOMETRY      0
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Type Definitions
@@ -88,12 +91,11 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 typedef enum
 {
-    /* Create the Timer Object */
-    APP_STATE_TIMER_OBJECT_CREATE,
+    /* Create objects */
+    APP_STATE_INITIALIZE,
 
     /* Idle State */
     APP_STATE_IDLE
-
 } APP_STATES;
 
 
@@ -120,10 +122,10 @@ typedef struct
 
     /* Command handle to store most recent command */
     DRV_NVM_COMMAND_HANDLE nvmCmdHandle;
-
+#if PRINT_NVM_GEOMETRY
     /* Pointer to NVM geometry description */
     SYS_FS_MEDIA_GEOMETRY *nvmGeometry;
-
+#endif
     SYS_TMR_HANDLE tmrServiceHandle;
 
     int count;
