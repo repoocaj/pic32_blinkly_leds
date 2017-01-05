@@ -63,6 +63,19 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "boot_launcher.h"
 #include "version.h"
 
+/* Write the bootloader version into the persistant data area */
+void get_version(boot_version_t * version)
+{
+    boot_version_t * p_version = (boot_version_t *) BOOT_LAUNCHER_VERSION_ADDRESS;
+
+    if (NULL != version)
+    {
+        version->major = p_version->major;
+        version->minor = p_version->minor;
+        version->patch = p_version->patch;
+    }
+}
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Main Entry Point
@@ -84,6 +97,15 @@ int main ( void )
         PATCH_VERSION,
         reason,
         boot_launcher__get_NVM_base_address()
+    );
+
+    boot_version_t boot_loader_version;
+    get_version(&boot_loader_version);
+    SYS_CONSOLE_PRINT(
+        "bootloader v%u.%u.%u\r\n",
+        boot_loader_version.major,
+        boot_loader_version.minor,
+        boot_loader_version.patch
     );
 
     while ( true )
