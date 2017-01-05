@@ -41,7 +41,7 @@
     <SystemStartScript/>
   </DisplayManager>
   <General>
-    <HarmonyPath path="../../../../.."/>
+    <HarmonyPath path="../.."/>
     <Processor name="PIC32MZ2048EFM144"/>
     <Board name=""/>
     <ForceOptimization flag="true"/>
@@ -324,6 +324,7 @@
         <Name>system_init.c</Name>
         <Path>Source Files/app/system_config/pic32mz_ef_sk</Path>
         <Checksum>6F25B006942D0A5D5EECEB3B608F82D1</Checksum>
+        <ProjectFileChecksum>E9B7C59D15EB1649E4359C18F707E208</ProjectFileChecksum>
       </Template>
       <Template>
         <Name>sys_clk_static.c</Name>
@@ -376,15 +377,15 @@
     </Templates>
     <CompilerItems>
       <C32>
-        <Include value="/home/jeffc/microchip/harmony/v2_01b/apps/examples/peripheral/ports/blinky_leds/firmware/src"/>
-        <Include value="/home/jeffc/microchip/harmony/v2_01b/apps/examples/peripheral/ports/blinky_leds/firmware/src/system_config/pic32mz_ef_sk"/>
+        <Include value="/home/jeffc/microchip/harmony/v2_01b/apps/pic32_blinkly_leds/firmware/src"/>
+        <Include value="/home/jeffc/microchip/harmony/v2_01b/apps/pic32_blinkly_leds/firmware/src/system_config/pic32mz_ef_sk"/>
         <Include value="/home/jeffc/microchip/harmony/v2_01b/framework"/>
-        <Include value="/home/jeffc/microchip/harmony/v2_01b/apps/examples/peripheral/ports/blinky_leds/firmware/src/system_config/pic32mz_ef_sk/framework"/>
+        <Include value="/home/jeffc/microchip/harmony/v2_01b/apps/pic32_blinkly_leds/firmware/src/system_config/pic32mz_ef_sk/framework"/>
         <Include value="../src/system_config/pic32mz_ef_sk/bsp"/>
       </C32>
     </CompilerItems>
     <Libraries>
-      <Library value="../../../../../../../bin/framework/peripheral/PIC32MZ2048EFM144_peripherals.a"/>
+      <Library value="../../../../bin/framework/peripheral/PIC32MZ2048EFM144_peripherals.a"/>
     </Libraries>
   </Manifest>
 </configuration>

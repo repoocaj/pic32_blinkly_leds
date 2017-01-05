@@ -74,109 +74,137 @@
         <logicalFolder name="f2" displayName="driver" projectFiles="true">
           <logicalFolder name="f2" displayName="nvm" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../../../../framework/driver/nvm/src/drv_nvm_local.h</itemPath>
-              <itemPath>../../../../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h</itemPath>
+              <itemPath>../../../../framework/driver/nvm/src/drv_nvm_local.h</itemPath>
+              <itemPath>../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h</itemPath>
             </logicalFolder>
-            <itemPath>../../../../../../../framework/driver/nvm/drv_nvm.h</itemPath>
+            <itemPath>../../../../framework/driver/nvm/drv_nvm.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f1" displayName="tmr" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <itemPath>../../../../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h</itemPath>
               <itemPath>../../../../../../../framework/driver/tmr/src/drv_tmr_local.h</itemPath>
+              <itemPath>../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h</itemPath>
+              <itemPath>../../../../framework/driver/tmr/src/drv_tmr_local.h</itemPath>
             </logicalFolder>
             <itemPath>../../../../../../../framework/driver/tmr/drv_tmr.h</itemPath>
             <itemPath>../../../../../../../framework/driver/tmr/drv_tmr_mapping.h</itemPath>
             <itemPath>../../../../../../../framework/driver/tmr/drv_tmr_compatibility.h</itemPath>
+            <itemPath>../../../../framework/driver/tmr/drv_tmr.h</itemPath>
+            <itemPath>../../../../framework/driver/tmr/drv_tmr_mapping.h</itemPath>
+            <itemPath>../../../../framework/driver/tmr/drv_tmr_compatibility.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f3" displayName="usart" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h</itemPath>
-              <itemPath>../../../../../../../framework/driver/usart/src/drv_usart_local.h</itemPath>
+              <itemPath>../../../../framework/driver/usart/src/drv_usart_variant_mapping.h</itemPath>
+              <itemPath>../../../../framework/driver/usart/src/drv_usart_local.h</itemPath>
             </logicalFolder>
-            <itemPath>../../../../../../../framework/driver/usart/drv_usart.h</itemPath>
+            <itemPath>../../../../framework/driver/usart/drv_usart.h</itemPath>
           </logicalFolder>
           <itemPath>../../../../../../../framework/driver/driver.h</itemPath>
           <itemPath>../../../../../../../framework/driver/driver_common.h</itemPath>
+          <itemPath>../../../../framework/driver/driver.h</itemPath>
+          <itemPath>../../../../framework/driver/driver_common.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f4" displayName="osal" projectFiles="true">
           <logicalFolder name="f1" displayName="src" projectFiles="true">
             <itemPath>../../../../../../../framework/osal/src/osal_impl_basic.h</itemPath>
             <itemPath>../../../../../../../framework/osal/src/osal_impl_none.h</itemPath>
+            <itemPath>../../../../framework/osal/src/osal_impl_basic.h</itemPath>
+            <itemPath>../../../../framework/osal/src/osal_impl_none.h</itemPath>
           </logicalFolder>
           <itemPath>../../../../../../../framework/osal/osal.h</itemPath>
           <itemPath>../../../../../../../framework/osal/osal_definitions.h</itemPath>
+          <itemPath>../../../../framework/osal/osal.h</itemPath>
+          <itemPath>../../../../framework/osal/osal_definitions.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f1" displayName="system" projectFiles="true">
           <logicalFolder name="f6" displayName="clk" projectFiles="true">
             <itemPath>../../../../../../../framework/system/clk/sys_clk.h</itemPath>
             <itemPath>../../../../../../../framework/system/clk/sys_clk_mapping.h</itemPath>
             <itemPath>../../../../../../../framework/system/clk/sys_clk_compatibility.h</itemPath>
+            <itemPath>../../../../framework/system/clk/sys_clk.h</itemPath>
+            <itemPath>../../../../framework/system/clk/sys_clk_compatibility.h</itemPath>
+            <itemPath>../../../../framework/system/clk/sys_clk_mapping.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f10" displayName="command" projectFiles="true">
-            <itemPath>../../../../../../../framework/system/command/sys_command.h</itemPath>
+            <itemPath>../../../../framework/system/command/sys_command.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f1" displayName="common" projectFiles="true">
             <itemPath>../../../../../../../framework/system/common/sys_common.h</itemPath>
             <itemPath>../../../../../../../framework/system/common/sys_module.h</itemPath>
             <itemPath>../../../../../../../framework/system/common/sys_buffer.h</itemPath>
             <itemPath>../../../../../../../framework/system/common/sys_queue.h</itemPath>
+            <itemPath>../../../../framework/system/common/sys_common.h</itemPath>
+            <itemPath>../../../../framework/system/common/sys_module.h</itemPath>
+            <itemPath>../../../../framework/system/common/sys_buffer.h</itemPath>
+            <itemPath>../../../../framework/system/common/sys_queue.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f11" displayName="console" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../../../../framework/system/console/src/sys_console_local.h</itemPath>
-              <itemPath>../../../../../../../framework/system/console/src/sys_console_uart.h</itemPath>
+              <itemPath>../../../../framework/system/console/src/sys_console_local.h</itemPath>
+              <itemPath>../../../../framework/system/console/src/sys_console_uart.h</itemPath>
             </logicalFolder>
-            <itemPath>../../../../../../../framework/system/console/sys_console.h</itemPath>
+            <itemPath>../../../../framework/system/console/sys_console.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f7" displayName="debug" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../../../../framework/system/debug/src/sys_debug_local.h</itemPath>
+              <itemPath>../../../../framework/system/debug/src/sys_debug_local.h</itemPath>
             </logicalFolder>
             <itemPath>../../../../../../../framework/system/debug/sys_debug.h</itemPath>
+            <itemPath>../../../../framework/system/debug/sys_debug.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="devcon" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <itemPath>../../../../../../../framework/system/devcon/src/sys_devcon_local.h</itemPath>
+              <itemPath>../../../../framework/system/devcon/src/sys_devcon_local.h</itemPath>
             </logicalFolder>
             <itemPath>../../../../../../../framework/system/devcon/sys_devcon.h</itemPath>
+            <itemPath>../../../../framework/system/devcon/sys_devcon.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f9" displayName="dma" projectFiles="true">
-            <itemPath>../../../../../../../framework/system/dma/sys_dma.h</itemPath>
+            <itemPath>../../../../framework/system/dma/sys_dma.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f8" displayName="fs" projectFiles="true">
-            <itemPath>../../../../../../../framework/system/fs/sys_fs.h</itemPath>
-            <itemPath>../../../../../../../framework/system/fs/sys_fs_media_manager.h</itemPath>
+            <itemPath>../../../../framework/system/fs/sys_fs.h</itemPath>
+            <itemPath>../../../../framework/system/fs/sys_fs_media_manager.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f4" displayName="int" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <itemPath>../../../../../../../framework/system/int/src/sys_int_private.h</itemPath>
+              <itemPath>../../../../framework/system/int/src/sys_int_private.h</itemPath>
             </logicalFolder>
             <itemPath>../../../../../../../framework/system/int/sys_int.h</itemPath>
             <itemPath>../../../../../../../framework/system/int/sys_int_mapping.h</itemPath>
+            <itemPath>../../../../framework/system/int/sys_int.h</itemPath>
+            <itemPath>../../../../framework/system/int/sys_int_mapping.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f3" displayName="ports" projectFiles="true">
             <itemPath>../../../../../../../framework/system/ports/sys_ports.h</itemPath>
+            <itemPath>../../../../framework/system/ports/sys_ports.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f12" displayName="reset" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../../../../framework/system/reset/src/sys_reset_local.h</itemPath>
-              <itemPath>../../../../../../../framework/system/reset/src/sys_reset_mapping.h</itemPath>
+              <itemPath>../../../../framework/system/reset/src/sys_reset_local.h</itemPath>
+              <itemPath>../../../../framework/system/reset/src/sys_reset_mapping.h</itemPath>
             </logicalFolder>
-            <itemPath>../../../../../../../framework/system/reset/sys_reset.h</itemPath>
+            <itemPath>../../../../framework/system/reset/sys_reset.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f5" displayName="tmr" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <itemPath>../../../../../../../framework/system/tmr/src/sys_tmr_local.h</itemPath>
+              <itemPath>../../../../framework/system/tmr/src/sys_tmr_local.h</itemPath>
             </logicalFolder>
             <itemPath>../../../../../../../framework/system/tmr/sys_tmr.h</itemPath>
+            <itemPath>../../../../framework/system/tmr/sys_tmr.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f13" displayName="wdt" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../../../../framework/system/wdt/src/sys_wdt_local.h</itemPath>
+              <itemPath>../../../../framework/system/wdt/src/sys_wdt_local.h</itemPath>
             </logicalFolder>
-            <itemPath>../../../../../../../framework/system/wdt/sys_wdt.h</itemPath>
+            <itemPath>../../../../framework/system/wdt/sys_wdt.h</itemPath>
           </logicalFolder>
           <itemPath>../../../../../../../framework/system/system.h</itemPath>
+          <itemPath>../../../../framework/system/system.h</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
@@ -365,8 +393,8 @@
           <logicalFolder name="f2" displayName="nvm" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
-                <itemPath>../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm.c</itemPath>
-                <itemPath>../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c</itemPath>
+                <itemPath>../../../../framework/driver/nvm/src/dynamic/drv_nvm.c</itemPath>
+                <itemPath>../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -374,15 +402,16 @@
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
                 <itemPath>../../../../../../../framework/driver/tmr/src/dynamic/drv_tmr.c</itemPath>
+                <itemPath>../../../../framework/driver/tmr/src/dynamic/drv_tmr.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f3" displayName="usart" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
-                <itemPath>../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c</itemPath>
-                <itemPath>../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c</itemPath>
-                <itemPath>../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c</itemPath>
+                <itemPath>../../../../framework/driver/usart/src/dynamic/drv_usart.c</itemPath>
+                <itemPath>../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c</itemPath>
+                <itemPath>../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -390,18 +419,18 @@
         <logicalFolder name="system" displayName="system" projectFiles="true">
           <logicalFolder name="f1" displayName="command" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../../../../framework/system/command/src/sys_command.c</itemPath>
+              <itemPath>../../../../framework/system/command/src/sys_command.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f4" displayName="console" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../../../../framework/system/console/src/sys_console.c</itemPath>
-              <itemPath>../../../../../../../framework/system/console/src/sys_console_uart.c</itemPath>
+              <itemPath>../../../../framework/system/console/src/sys_console.c</itemPath>
+              <itemPath>../../../../framework/system/console/src/sys_console_uart.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f5" displayName="debug" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../../../../framework/system/debug/src/sys_debug.c</itemPath>
+              <itemPath>../../../../framework/system/debug/src/sys_debug.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="devcon" displayName="devcon" projectFiles="true">
@@ -412,26 +441,32 @@
               <itemPath>../../../../../../../framework/system/devcon/src/sys_devcon_pic32mx.c</itemPath>
               <itemPath>../../../../../../../framework/system/devcon/src/sys_devcon_pic32mk.c</itemPath>
               <itemPath>../../../../../../../framework/system/devcon/src/sys_devcon_cache.h</itemPath>
+              <itemPath>../../../../framework/system/devcon/src/sys_devcon.c</itemPath>
+              <itemPath>../../../../framework/system/devcon/src/sys_devcon_pic32mz.c</itemPath>
+              <itemPath>../../../../framework/system/devcon/src/sys_devcon_cache_pic32mz.S</itemPath>
+              <itemPath>../../../../framework/system/devcon/src/sys_devcon_cache.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f2" displayName="int" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <itemPath>../../../../../../../framework/system/int/src/sys_int_pic32.c</itemPath>
+              <itemPath>../../../../framework/system/int/src/sys_int_pic32.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f6" displayName="reset" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../../../../framework/system/reset/src/sys_reset.c</itemPath>
+              <itemPath>../../../../framework/system/reset/src/sys_reset.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f3" displayName="tmr" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <itemPath>../../../../../../../framework/system/tmr/src/sys_tmr.c</itemPath>
+              <itemPath>../../../../framework/system/tmr/src/sys_tmr.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f7" displayName="wdt" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../../../../framework/system/wdt/src/sys_wdt.c</itemPath>
+              <itemPath>../../../../framework/system/wdt/src/sys_wdt.c</itemPath>
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
@@ -444,12 +479,12 @@
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
-    <Elem>../../../../../../../framework/system</Elem>
+    <Elem>../../../../framework/system</Elem>
     <Elem>../src</Elem>
     <Elem>../src/system_config/pic32mx_eth_sk</Elem>
     <Elem>../src/system_config/pic32mz_ec_sk</Elem>
     <Elem>../src/system_config/pic32mz_ef_sk</Elem>
-    <Elem>../../../../..</Elem>
+    <Elem>../..</Elem>
     <Elem>../src/system_config/pic32mz_da_sk</Elem>
     <Elem>..\src</Elem>
     <Elem>..\src\pic32mz_ef_sk_16b</Elem>
@@ -496,6 +531,8 @@
           <parseOnProdLoad>true</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
+        <subordinates>
+        </subordinates>
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
@@ -508,86 +545,6 @@
       </makeCustomizationType>
       <item path="../../../../../../../framework/driver/driver_common.h"
             ex="false"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/drv_nvm.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/drv_nvm_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c"
-            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -652,102 +609,6 @@
       </item>
       <item path="../../../../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h"
             ex="false"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/drv_usart.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/drv_usart_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
-            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -874,38 +735,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/command/src/sys_command.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/command/sys_command.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/common/sys_buffer.h"
             ex="false"
             overriding="false">
@@ -924,118 +753,6 @@
       </item>
       <item path="../../../../../../../framework/system/common/sys_queue.h"
             ex="false"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_uart.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_uart.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/sys_console.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/debug/src/sys_debug.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/debug/src/sys_debug_local.h"
-            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -1146,54 +863,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/dma/sys_dma.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/fs/sys_fs.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/fs/sys_fs_media_manager.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/int/src/sys_int_private.h"
             ex="false"
             overriding="false">
@@ -1226,70 +895,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/reset/sys_reset.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/tmr/src/sys_tmr_local.h"
             ex="false"
             overriding="false">
@@ -1306,53 +911,259 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/src/sys_wdt.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
+      <item path="../../../../framework/driver/driver.h" ex="true" overriding="false">
       </item>
-      <item path="../../../../../../../framework/system/wdt/src/sys_wdt_local.h"
+      <item path="../../../../framework/driver/driver_common.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/sys_wdt.h"
+      <item path="../../../../framework/driver/nvm/drv_nvm.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
+      </item>
+      <item path="../../../../framework/driver/nvm/src/drv_nvm_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/nvm/src/dynamic/drv_nvm.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/drv_tmr.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/drv_tmr_compatibility.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/drv_tmr_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/drv_tmr_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/dynamic/drv_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/drv_usart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/osal.h" ex="true" overriding="false">
+      </item>
+      <item path="../../../../framework/osal/osal_definitions.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/src/osal_impl_basic.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/src/osal_impl_none.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk_compatibility.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/command/src/sys_command.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/command/sys_command.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_buffer.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_common.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_module.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_queue.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_uart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_uart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/sys_console.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/src/sys_debug.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/src/sys_debug_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/sys_debug.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_cache.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_cache_pic32mz.S"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_pic32mz.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/sys_devcon.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/dma/sys_dma.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/fs/sys_fs.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/fs/sys_fs_media_manager.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/src/sys_int_pic32.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/src/sys_int_private.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/sys_int.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/sys_int_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/ports/sys_ports.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/sys_reset.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/system.h" ex="true" overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/src/sys_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/src/sys_tmr_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/sys_tmr.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/src/sys_wdt.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/src/sys_wdt_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/sys_wdt.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../src/system_config/pic32mk_evk/bsp/bsp.c"
             ex="true"
@@ -1853,162 +1664,42 @@
       <item path="../src/system_config/pic32mz_ef_sk/bsp/bsp.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/bsp/bsp.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_config.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_definitions.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_exceptions.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_init.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_interrupt.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_tasks.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_16b/bsp/bsp.c"
             ex="true"
@@ -2782,7 +2473,7 @@
       <compileType>
         <linkerTool>
           <linkerLibItems>
-            <linkerLibFileItem>../../../../../../../bin/framework/peripheral/PIC32MZ2048EFM144_peripherals.a</linkerLibFileItem>
+            <linkerLibFileItem>../../../../bin/framework/peripheral/PIC32MZ2048EFM144_peripherals.a</linkerLibFileItem>
           </linkerLibItems>
         </linkerTool>
         <archiverTool>
@@ -2792,6 +2483,8 @@
           <parseOnProdLoad>true</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
+        <subordinates>
+        </subordinates>
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
@@ -2802,8 +2495,12 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
+      <item path="../../../../../../../framework/driver/driver.h"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/driver/driver_common.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -2818,8 +2515,12 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/driver/tmr/drv_tmr.h"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/driver/tmr/drv_tmr_compatibility.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -2835,7 +2536,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../../framework/driver/tmr/drv_tmr_mapping.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -2851,7 +2552,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../../framework/driver/tmr/src/drv_tmr_local.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -2867,7 +2568,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -2882,8 +2583,12 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/driver/tmr/src/dynamic/drv_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/osal/osal.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -2899,7 +2604,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../../framework/osal/osal_definitions.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -2915,7 +2620,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../../framework/osal/src/osal_impl_basic.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -2931,7 +2636,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../../framework/osal/src/osal_impl_none.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -2947,7 +2652,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../../framework/system/clk/sys_clk.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -2963,7 +2668,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../../framework/system/clk/sys_clk_compatibility.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -2979,7 +2684,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../../framework/system/clk/sys_clk_mapping.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -2995,7 +2700,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../../framework/system/common/sys_buffer.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -3010,8 +2715,16 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/system/common/sys_common.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/common/sys_module.h"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/system/common/sys_queue.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -3027,7 +2740,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../../framework/system/debug/sys_debug.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -3042,8 +2755,20 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/system/devcon/src/sys_devcon.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/devcon/src/sys_devcon_cache.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/devcon/src/sys_devcon_cache_pic32mz.S"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/system/devcon/src/sys_devcon_local.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -3090,8 +2815,20 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/system/devcon/src/sys_devcon_pic32mz.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/devcon/sys_devcon.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/int/src/sys_int_pic32.c"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/system/int/src/sys_int_private.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -3105,9 +2842,13 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/int/sys_int.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../../framework/system/int/sys_int_mapping.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -3122,8 +2863,20 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../../framework/system/ports/sys_ports.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/system.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../../framework/system/tmr/src/sys_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../../framework/system/tmr/src/sys_tmr_local.h"
-            ex="false"
+            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -3137,6 +2890,10 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../../framework/system/tmr/sys_tmr.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../src/system_config/pic32mk_evk/bsp/bsp.c"
             ex="true"
@@ -4123,7 +3880,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src/pic32mz_ef_sk;../src;../src/system_config/pic32mz_ef_sk;../../../../../../../framework;../src/system_config/pic32mz_ef_sk/framework;../src/system_config/pic32mz_ef_sk/bsp"/>
+                  value="../src/pic32mz_ef_sk;../src;../src/system_config/pic32mz_ef_sk;../src/system_config/pic32mz_ef_sk/framework;../../../../framework;../src/system_config/pic32mz_ef_sk/bsp"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -4322,26 +4079,19 @@
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
         <property key="memories.instruction.ram" value="true"/>
-        <property key="memories.instruction.ram.end"
-                  value="${memories.instruction.ram.end.value}"/>
-        <property key="memories.instruction.ram.start"
-                  value="${memories.instruction.ram.start.value}"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
-        <property key="memories.programmemory.end" value="0x1d1fffff"/>
-        <property key="memories.programmemory.partition2" value="true"/>
-        <property key="memories.programmemory.partition2.end"
-                  value="${memories.programmemory.partition2.end.value}"/>
-        <property key="memories.programmemory.partition2.start"
-                  value="${memories.programmemory.partition2.start.value}"/>
-        <property key="memories.programmemory.start" value="0x1d000000"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges" value=""/>
         <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
         <property key="programoptions.preserveprogramrange" value="false"/>
-        <property key="programoptions.preserveprogramrange.end" value="0x1d1fffff"/>
-        <property key="programoptions.preserveprogramrange.start" value="0x1d000000"/>
         <property key="programoptions.preserveuserid" value="false"/>
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
@@ -4707,6 +4457,8 @@
           <parseOnProdLoad>true</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
+        <subordinates>
+        </subordinates>
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
@@ -4719,86 +4471,6 @@
       </makeCustomizationType>
       <item path="../../../../../../../framework/driver/driver_common.h"
             ex="false"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/drv_nvm.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/drv_nvm_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c"
-            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -4863,102 +4535,6 @@
       </item>
       <item path="../../../../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h"
             ex="false"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/drv_usart.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/drv_usart_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
-            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -5085,38 +4661,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/command/src/sys_command.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/command/sys_command.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/common/sys_buffer.h"
             ex="false"
             overriding="false">
@@ -5135,118 +4679,6 @@
       </item>
       <item path="../../../../../../../framework/system/common/sys_queue.h"
             ex="false"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_uart.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_uart.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/sys_console.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/debug/src/sys_debug.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/debug/src/sys_debug_local.h"
-            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -5325,54 +4757,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/dma/sys_dma.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/fs/sys_fs.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/fs/sys_fs_media_manager.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/int/src/sys_int_private.h"
             ex="false"
             overriding="false">
@@ -5405,70 +4789,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/reset/sys_reset.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/tmr/src/sys_tmr_local.h"
             ex="false"
             overriding="false">
@@ -5485,53 +4805,259 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/src/sys_wdt.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
+      <item path="../../../../framework/driver/driver.h" ex="true" overriding="false">
       </item>
-      <item path="../../../../../../../framework/system/wdt/src/sys_wdt_local.h"
+      <item path="../../../../framework/driver/driver_common.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/sys_wdt.h"
+      <item path="../../../../framework/driver/nvm/drv_nvm.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
+      </item>
+      <item path="../../../../framework/driver/nvm/src/drv_nvm_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/nvm/src/dynamic/drv_nvm.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/drv_tmr.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/drv_tmr_compatibility.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/drv_tmr_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/drv_tmr_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/dynamic/drv_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/drv_usart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/osal.h" ex="true" overriding="false">
+      </item>
+      <item path="../../../../framework/osal/osal_definitions.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/src/osal_impl_basic.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/src/osal_impl_none.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk_compatibility.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/command/src/sys_command.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/command/sys_command.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_buffer.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_common.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_module.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_queue.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_uart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_uart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/sys_console.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/src/sys_debug.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/src/sys_debug_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/sys_debug.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_cache.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_cache_pic32mz.S"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_pic32mz.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/sys_devcon.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/dma/sys_dma.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/fs/sys_fs.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/fs/sys_fs_media_manager.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/src/sys_int_pic32.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/src/sys_int_private.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/sys_int.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/sys_int_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/ports/sys_ports.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/sys_reset.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/system.h" ex="true" overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/src/sys_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/src/sys_tmr_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/sys_tmr.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/src/sys_wdt.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/src/sys_wdt_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/sys_wdt.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../src/system_config/pic32mk_evk/bsp/bsp.c"
             ex="true"
@@ -6032,162 +5558,42 @@
       <item path="../src/system_config/pic32mz_ef_sk/bsp/bsp.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/bsp/bsp.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_config.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_definitions.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_exceptions.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_init.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_interrupt.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_tasks.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_16b/bsp/bsp.c"
             ex="true"
@@ -6754,26 +6160,19 @@
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
         <property key="memories.instruction.ram" value="true"/>
-        <property key="memories.instruction.ram.end"
-                  value="${memories.instruction.ram.end.value}"/>
-        <property key="memories.instruction.ram.start"
-                  value="${memories.instruction.ram.start.value}"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
-        <property key="memories.programmemory.end" value="0x1d1fffff"/>
-        <property key="memories.programmemory.partition2" value="true"/>
-        <property key="memories.programmemory.partition2.end"
-                  value="${memories.programmemory.partition2.end.value}"/>
-        <property key="memories.programmemory.partition2.start"
-                  value="${memories.programmemory.partition2.start.value}"/>
-        <property key="memories.programmemory.start" value="0x1d000000"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges" value=""/>
         <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
         <property key="programoptions.preserveprogramrange" value="false"/>
-        <property key="programoptions.preserveprogramrange.end" value="0x1d1fffff"/>
-        <property key="programoptions.preserveprogramrange.start" value="0x1d000000"/>
         <property key="programoptions.preserveuserid" value="false"/>
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
@@ -7020,6 +6419,8 @@
           <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
+        <subordinates>
+        </subordinates>
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
@@ -7032,86 +6433,6 @@
       </makeCustomizationType>
       <item path="../../../../../../../framework/driver/driver_common.h"
             ex="false"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/drv_nvm.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/drv_nvm_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c"
-            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -7176,102 +6497,6 @@
       </item>
       <item path="../../../../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h"
             ex="false"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/drv_usart.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/drv_usart_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
-            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -7398,38 +6623,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/command/src/sys_command.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/command/sys_command.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/common/sys_buffer.h"
             ex="false"
             overriding="false">
@@ -7448,118 +6641,6 @@
       </item>
       <item path="../../../../../../../framework/system/common/sys_queue.h"
             ex="false"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_uart.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_uart.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/sys_console.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/debug/src/sys_debug.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/debug/src/sys_debug_local.h"
-            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -7638,54 +6719,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/dma/sys_dma.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/fs/sys_fs.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/fs/sys_fs_media_manager.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/int/src/sys_int_private.h"
             ex="false"
             overriding="false">
@@ -7718,70 +6751,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/reset/sys_reset.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/tmr/src/sys_tmr_local.h"
             ex="false"
             overriding="false">
@@ -7798,53 +6767,259 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/src/sys_wdt.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
+      <item path="../../../../framework/driver/driver.h" ex="true" overriding="false">
       </item>
-      <item path="../../../../../../../framework/system/wdt/src/sys_wdt_local.h"
+      <item path="../../../../framework/driver/driver_common.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/sys_wdt.h"
+      <item path="../../../../framework/driver/nvm/drv_nvm.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
+      </item>
+      <item path="../../../../framework/driver/nvm/src/drv_nvm_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/nvm/src/dynamic/drv_nvm.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/drv_tmr.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/drv_tmr_compatibility.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/drv_tmr_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/drv_tmr_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/dynamic/drv_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/drv_usart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/osal.h" ex="true" overriding="false">
+      </item>
+      <item path="../../../../framework/osal/osal_definitions.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/src/osal_impl_basic.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/src/osal_impl_none.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk_compatibility.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/command/src/sys_command.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/command/sys_command.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_buffer.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_common.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_module.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_queue.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_uart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_uart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/sys_console.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/src/sys_debug.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/src/sys_debug_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/sys_debug.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_cache.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_cache_pic32mz.S"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_pic32mz.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/sys_devcon.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/dma/sys_dma.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/fs/sys_fs.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/fs/sys_fs_media_manager.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/src/sys_int_pic32.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/src/sys_int_private.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/sys_int.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/sys_int_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/ports/sys_ports.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/sys_reset.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/system.h" ex="true" overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/src/sys_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/src/sys_tmr_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/sys_tmr.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/src/sys_wdt.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/src/sys_wdt_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/sys_wdt.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../src/system_config/pic32mk_evk/bsp/bsp.c"
             ex="true"
@@ -8505,162 +7680,42 @@
       <item path="../src/system_config/pic32mz_ef_sk/bsp/bsp.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/bsp/bsp.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_config.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_definitions.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_exceptions.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_init.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_interrupt.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_tasks.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32wk_sk/bsp/bsp.c"
             ex="true"
@@ -8957,16 +8012,16 @@
         <property key="memories.eeprom" value="true"/>
         <property key="memories.id" value="true"/>
         <property key="memories.programmemory" value="true"/>
-        <property key="memories.programmemory.end" value="0x1d1fffff"/>
-        <property key="memories.programmemory.start" value="0x1d000000"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
         <property key="memories.userotp" value="true"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges" value=""/>
         <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
         <property key="programoptions.preserveprogramrange" value="false"/>
-        <property key="programoptions.preserveprogramrange.end" value="0x1d0007ff"/>
-        <property key="programoptions.preserveprogramrange.start" value="0x1d000000"/>
         <property key="programoptions.usehighvoltageonmclr" value="false"/>
         <property key="programoptions.uselvpprogramming" value="true"/>
       </PKOBSKDEPlatformTool>
@@ -9111,6 +8166,8 @@
           <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
+        <subordinates>
+        </subordinates>
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
@@ -9121,327 +8178,7 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
-      <item path="../../../../../../../framework/driver/nvm/drv_nvm.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/drv_nvm_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/drv_usart.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/drv_usart_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/clk/sys_clk_compatibility.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/command/src/sys_command.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/command/sys_command.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_uart.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_uart.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/sys_console.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/debug/src/sys_debug.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/debug/src/sys_debug_local.h"
             ex="true"
             overriding="false">
         <C32>
@@ -9521,165 +8258,259 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/dma/sys_dma.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
+      <item path="../../../../framework/driver/driver.h" ex="true" overriding="false">
       </item>
-      <item path="../../../../../../../framework/system/fs/sys_fs.h"
+      <item path="../../../../framework/driver/driver_common.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/fs/sys_fs_media_manager.h"
+      <item path="../../../../framework/driver/nvm/drv_nvm.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset.c"
+      <item path="../../../../framework/driver/nvm/src/drv_nvm_local.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset_local.h"
+      <item path="../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset_mapping.h"
+      <item path="../../../../framework/driver/nvm/src/dynamic/drv_nvm.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/reset/sys_reset.h"
+      <item path="../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/src/sys_wdt.c"
+      <item path="../../../../framework/driver/tmr/drv_tmr.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/src/sys_wdt_local.h"
+      <item path="../../../../framework/driver/tmr/drv_tmr_compatibility.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/sys_wdt.h"
+      <item path="../../../../framework/driver/tmr/drv_tmr_mapping.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
+      </item>
+      <item path="../../../../framework/driver/tmr/src/drv_tmr_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/dynamic/drv_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/drv_usart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/osal.h" ex="true" overriding="false">
+      </item>
+      <item path="../../../../framework/osal/osal_definitions.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/src/osal_impl_basic.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/src/osal_impl_none.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk_compatibility.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/command/src/sys_command.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/command/sys_command.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_buffer.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_common.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_module.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_queue.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_uart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_uart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/sys_console.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/src/sys_debug.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/src/sys_debug_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/sys_debug.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_cache.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_cache_pic32mz.S"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_pic32mz.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/sys_devcon.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/dma/sys_dma.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/fs/sys_fs.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/fs/sys_fs_media_manager.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/src/sys_int_pic32.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/src/sys_int_private.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/sys_int.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/sys_int_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/ports/sys_ports.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/sys_reset.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/system.h" ex="true" overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/src/sys_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/src/sys_tmr_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/sys_tmr.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/src/sys_wdt.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/src/sys_wdt_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/sys_wdt.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../src/system_config/pic32mx_eth_sk/bsp/bsp.c"
             ex="true"
@@ -10164,162 +8995,42 @@
       <item path="../src/system_config/pic32mz_ef_sk/bsp/bsp.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/bsp/bsp.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_config.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_definitions.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_exceptions.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_init.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_interrupt.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_tasks.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_16b/bsp/bsp.c"
             ex="true"
@@ -10872,26 +9583,19 @@
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
         <property key="memories.instruction.ram" value="true"/>
-        <property key="memories.instruction.ram.end"
-                  value="${memories.instruction.ram.end.value}"/>
-        <property key="memories.instruction.ram.start"
-                  value="${memories.instruction.ram.start.value}"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
-        <property key="memories.programmemory.end" value="0x1d0fffff"/>
-        <property key="memories.programmemory.partition2" value="true"/>
-        <property key="memories.programmemory.partition2.end"
-                  value="${memories.programmemory.partition2.end.value}"/>
-        <property key="memories.programmemory.partition2.start"
-                  value="${memories.programmemory.partition2.start.value}"/>
-        <property key="memories.programmemory.start" value="0x1d000000"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d0fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges" value=""/>
         <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
         <property key="programoptions.preserveprogramrange" value="false"/>
-        <property key="programoptions.preserveprogramrange.end" value="0x1d0fffff"/>
-        <property key="programoptions.preserveprogramrange.start" value="0x1d000000"/>
         <property key="programoptions.preserveuserid" value="false"/>
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
@@ -10930,6 +9634,8 @@
           <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
+        <subordinates>
+        </subordinates>
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
@@ -10958,86 +9664,6 @@
       </item>
       <item path="../../../../../../../framework/driver/driver_common.h"
             ex="false"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/drv_nvm.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/drv_nvm_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c"
-            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -11148,102 +9774,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/driver/usart/drv_usart.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/drv_usart_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/osal/osal.h"
             ex="false"
             overriding="false">
@@ -11340,38 +9870,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/command/src/sys_command.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/command/sys_command.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/common/sys_buffer.h"
             ex="false"
             overriding="false">
@@ -11422,118 +9920,6 @@
       </item>
       <item path="../../../../../../../framework/system/common/sys_queue.h"
             ex="false"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_uart.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_uart.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/sys_console.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/debug/src/sys_debug.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/debug/src/sys_debug_local.h"
-            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -11692,54 +10078,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/dma/sys_dma.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/fs/sys_fs.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/fs/sys_fs_media_manager.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/int/src/sys_int_pic32.c"
             ex="false"
             overriding="false">
@@ -11820,70 +10158,6 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/reset/sys_reset.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/system.h"
             ex="false"
             overriding="false">
@@ -11948,53 +10222,259 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/src/sys_wdt.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
+      <item path="../../../../framework/driver/driver.h" ex="true" overriding="false">
       </item>
-      <item path="../../../../../../../framework/system/wdt/src/sys_wdt_local.h"
+      <item path="../../../../framework/driver/driver_common.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/sys_wdt.h"
+      <item path="../../../../framework/driver/nvm/drv_nvm.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
+      </item>
+      <item path="../../../../framework/driver/nvm/src/drv_nvm_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/nvm/src/dynamic/drv_nvm.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/drv_tmr.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/drv_tmr_compatibility.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/drv_tmr_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/drv_tmr_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/dynamic/drv_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/drv_usart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/osal.h" ex="true" overriding="false">
+      </item>
+      <item path="../../../../framework/osal/osal_definitions.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/src/osal_impl_basic.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/src/osal_impl_none.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk_compatibility.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/command/src/sys_command.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/command/sys_command.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_buffer.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_common.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_module.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_queue.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_uart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_uart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/sys_console.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/src/sys_debug.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/src/sys_debug_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/sys_debug.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_cache.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_cache_pic32mz.S"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_pic32mz.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/sys_devcon.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/dma/sys_dma.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/fs/sys_fs.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/fs/sys_fs_media_manager.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/src/sys_int_pic32.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/src/sys_int_private.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/sys_int.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/sys_int_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/ports/sys_ports.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/sys_reset.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/system.h" ex="true" overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/src/sys_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/src/sys_tmr_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/sys_tmr.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/src/sys_wdt.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/src/sys_wdt_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/sys_wdt.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../src/system_config/pic32mk_evk/bsp/bsp.c"
             ex="true"
@@ -12655,162 +11135,42 @@
       <item path="../src/system_config/pic32mz_ef_sk/bsp/bsp.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/bsp/bsp.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_config.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_definitions.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_exceptions.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_init.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_interrupt.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_tasks.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_16b/bsp/bsp.c"
             ex="true"
@@ -13207,6 +11567,9 @@
                   value="report"/>
         <property key="warningmessagebreakoptions.W0027_CORE_UNIMPLEMENTED_EDSACCESS"
                   value="report"/>
+        <property key="warningmessagebreakoptions.W0028_TBLRD_WORM_CONFIG_MEMORY"
+                  value="report"/>
+        <property key="warningmessagebreakoptions.W0029_TBLRD_DEVICE_ID" value="report"/>
         <property key="warningmessagebreakoptions.W0031_BSLIM_INSUFFICIENT_BOOT_SEGMENT"
                   value="report"/>
         <property key="warningmessagebreakoptions.W0032_BSLIM_LIMITS_EXCEEDS_PROG_MEMORY"
@@ -13336,6 +11699,12 @@
         <property key="warningmessagebreakoptions.W1600_PPS_INVALID_MAP" value="report"/>
         <property key="warningmessagebreakoptions.W1601_PPS_INVALID_PIN_DESCRIPTION"
                   value="report"/>
+        <property key="warningmessagebreakoptions.W1800_PWM_TIMER_SELECTION_NOT_AVIALABLE"
+                  value="report"/>
+        <property key="warningmessagebreakoptions.W1801_PWM_TIMER_SELECTION_BAD_CLOCK_INPUT"
+                  value="report"/>
+        <property key="warningmessagebreakoptions.W1802_PWM_TIMER_MISSING_PERSCALER_INFO"
+                  value="report"/>
         <property key="warningmessagebreakoptions.W2001_INPUTCAPTURE_TMR3_UNAVAILABLE"
                   value="report"/>
         <property key="warningmessagebreakoptions.W2002_INPUTCAPTURE_CAPTURE_EMPTY"
@@ -13355,6 +11724,8 @@
         <property key="warningmessagebreakoptions.W7002_SMT_SIG_SELECTION_NOT_SUPPORT"
                   value="report"/>
         <property key="warningmessagebreakoptions.W7003_SMT_WIN_SELECTION_NOT_SUPPORT"
+                  value="report"/>
+        <property key="warningmessagebreakoptions.W8001_OSC_INVALID_CLOCK_SOURCE"
                   value="report"/>
         <property key="warningmessagebreakoptions.W9001_TMR_GATE_AND_EXTCLOCK_ENABLED"
                   value="report"/>
@@ -13384,6 +11755,10 @@
         <property key="warningmessagebreakoptions.W9604_COMP_SLOPE_SOURCE_UNAVAILABLE"
                   value="report"/>
         <property key="warningmessagebreakoptions.W9605_COMP_PRG_SOURCE_UNAVAILABLE"
+                  value="report"/>
+        <property key="warningmessagebreakoptions.W9607_COMP_DGTL_FLTR_OPTION_UNAVAILABLE"
+                  value="report"/>
+        <property key="warningmessagebreakoptions.W9609_COMP_DGTL_FLTR_CLK_UNAVAILABLE"
                   value="report"/>
         <property key="warningmessagebreakoptions.W9801_FVR_INVALID_MODE_SELECTION"
                   value="report"/>
@@ -13426,6 +11801,8 @@
           <parseOnProdLoad>true</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
+        <subordinates>
+        </subordinates>
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
@@ -13436,328 +11813,8 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
-      <item path="../../../../../../../framework/driver/nvm/drv_nvm.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/drv_nvm_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/drv_usart.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/drv_usart_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
       <item path="../../../../../../../framework/system/clk/sys_clk_compatibility.h"
             ex="false"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/command/src/sys_command.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/command/sys_command.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_local.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_uart.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/src/sys_console_uart.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/console/sys_console.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/debug/src/sys_debug.c"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../../../../../../../framework/system/debug/src/sys_debug_local.h"
-            ex="true"
             overriding="false">
         <C32>
         </C32>
@@ -13836,165 +11893,259 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/dma/sys_dma.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
+      <item path="../../../../framework/driver/driver.h" ex="true" overriding="false">
       </item>
-      <item path="../../../../../../../framework/system/fs/sys_fs.h"
+      <item path="../../../../framework/driver/driver_common.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/fs/sys_fs_media_manager.h"
+      <item path="../../../../framework/driver/nvm/drv_nvm.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset.c"
+      <item path="../../../../framework/driver/nvm/src/drv_nvm_local.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset_local.h"
+      <item path="../../../../framework/driver/nvm/src/drv_nvm_variant_mapping.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/reset/src/sys_reset_mapping.h"
+      <item path="../../../../framework/driver/nvm/src/dynamic/drv_nvm.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/reset/sys_reset.h"
+      <item path="../../../../framework/driver/nvm/src/dynamic/drv_nvm_erasewrite.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/src/sys_wdt.c"
+      <item path="../../../../framework/driver/tmr/drv_tmr.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/src/sys_wdt_local.h"
+      <item path="../../../../framework/driver/tmr/drv_tmr_compatibility.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
-      <item path="../../../../../../../framework/system/wdt/sys_wdt.h"
+      <item path="../../../../framework/driver/tmr/drv_tmr_mapping.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
+      </item>
+      <item path="../../../../framework/driver/tmr/src/drv_tmr_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/tmr/src/dynamic/drv_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/drv_usart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/osal.h" ex="true" overriding="false">
+      </item>
+      <item path="../../../../framework/osal/osal_definitions.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/src/osal_impl_basic.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/osal/src/osal_impl_none.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk_compatibility.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/clk/sys_clk_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/command/src/sys_command.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/command/sys_command.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_buffer.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_common.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_module.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/common/sys_queue.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_uart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/src/sys_console_uart.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/console/sys_console.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/src/sys_debug.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/src/sys_debug_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/debug/sys_debug.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_cache.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_cache_pic32mz.S"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/src/sys_devcon_pic32mz.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/devcon/sys_devcon.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/dma/sys_dma.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/fs/sys_fs.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/fs/sys_fs_media_manager.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/src/sys_int_pic32.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/src/sys_int_private.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/sys_int.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/int/sys_int_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/ports/sys_ports.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/src/sys_reset_mapping.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/reset/sys_reset.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/system.h" ex="true" overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/src/sys_tmr.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/src/sys_tmr_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/tmr/sys_tmr.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/src/sys_wdt.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/src/sys_wdt_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../framework/system/wdt/sys_wdt.h"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../src/system_config/pic32mk_evk/bsp/bsp.c"
             ex="true"
@@ -14495,162 +12646,42 @@
       <item path="../src/system_config/pic32mz_ef_sk/bsp/bsp.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/bsp/bsp.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/framework/system/clk/src/sys_clk_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_config.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_definitions.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_exceptions.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_init.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_interrupt.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk/system_tasks.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_16b/bsp/bsp.c"
             ex="true"
@@ -15106,16 +13137,16 @@
         <property key="memories.eeprom" value="true"/>
         <property key="memories.id" value="true"/>
         <property key="memories.programmemory" value="true"/>
-        <property key="memories.programmemory.end" value="0x1d03ffff"/>
-        <property key="memories.programmemory.start" value="0x1d000000"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d03ffff"/>
         <property key="memories.userotp" value="true"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges" value=""/>
         <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
         <property key="programoptions.preserveprogramrange" value="false"/>
-        <property key="programoptions.preserveprogramrange.end" value="0x1d0001ff"/>
-        <property key="programoptions.preserveprogramrange.start" value="0x1d000000"/>
         <property key="programoptions.usehighvoltageonmclr" value="false"/>
         <property key="programoptions.uselvpprogramming" value="true"/>
       </PKOBSKDEPlatformTool>
