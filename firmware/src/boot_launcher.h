@@ -22,6 +22,7 @@
 
 typedef struct
 {
+    uint32_t valid;
     uint16_t major;
     uint16_t minor;
     uint16_t patch;
@@ -59,6 +60,8 @@ typedef enum
 #define BOOT_LAUNCHER_CODE_ADDRESS              (BOOT_LAUNCHER_DEBUG_FLAGS_ADDRESS + BOOT_LAUNCHER_DEBUG_FLAGS_MAX_LEN)
 #define BOOT_LAUNCHER_RESULT_ADDRESS            (BOOT_LAUNCHER_CODE_ADDRESS + sizeof(uint32_t))
 #define BOOT_LAUNCHER_VERSION_ADDRESS           (BOOT_LAUNCHER_RESULT_ADDRESS + sizeof(uint32_t))
+
+#define BOOT_LAUNCHER_VERSION_VALID             (0x0b1e55ed)
 
 #define BOOT_LAUNCHER_UPDATE_CODE               (0x87654321)
 #define BOOT_LAUNCHER_POWER_UP_CODE             (0x97979797)
