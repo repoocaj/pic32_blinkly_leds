@@ -248,7 +248,15 @@ void APP_Initialize ( void )
 
 void APP_Tasks ( void )
 {
-   /* Take appropriate action, depending on the current state. */
+    static APP_STATES lastState = -1;
+
+    if (lastState != appData.state)
+    {
+        SYS_CONSOLE_PRINT("%d->%d\r\n", lastState, appData.state);
+        lastState = appData.state;
+    }
+
+    /* Take appropriate action, depending on the current state. */
     switch (appData.state)
     {
         case APP_STATE_INITIALIZE:

@@ -64,16 +64,18 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "version.h"
 
 /* Write the bootloader version into the persistant data area */
-void get_version(boot_version_t * version)
+bool get_version(boot_version_t * version)
 {
     boot_version_t * p_version = (boot_version_t *) BOOT_LAUNCHER_VERSION_ADDRESS;
 
-    if (NULL != version)
+    if (NULL != version && p_version->valid == BOOT_LAUNCHER_VERSION_VALID)
     {
         version->major = p_version->major;
         version->minor = p_version->minor;
         version->patch = p_version->patch;
+        return true;
     }
+    return false;
 }
 
 // *****************************************************************************
@@ -84,6 +86,11 @@ void get_version(boot_version_t * version)
 
 int main ( void )
 {
+    bool used_bootloader;
+    boot_version_t boot_loader_version;
+
+    used_bootloader = get_version(&boot_loader_version);
+
     /* Initialize all MPLAB Harmony modules, including application(s). */
     SYS_Initialize(boot_launcher__get_NVM_base_address());
 
@@ -99,14 +106,15 @@ int main ( void )
         boot_launcher__get_NVM_base_address()
     );
 
-    boot_version_t boot_loader_version;
-    get_version(&boot_loader_version);
-    SYS_CONSOLE_PRINT(
-        "bootloader v%u.%u.%u\r\n",
-        boot_loader_version.major,
-        boot_loader_version.minor,
-        boot_loader_version.patch
-    );
+    if (used_bootloader)
+    {
+        SYS_CONSOLE_PRINT(
+            "bootloader v%u.%u.%u\r\n",
+            boot_loader_version.major,
+            boot_loader_version.minor,
+            boot_loader_version.patch
+        );
+    }
 
     while ( true )
     {

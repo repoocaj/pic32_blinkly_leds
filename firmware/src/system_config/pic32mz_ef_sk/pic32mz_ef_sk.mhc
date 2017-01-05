@@ -4564,7 +4564,7 @@ CONFIG_PROJECT_STANDALONE=n
 #
 # from $HARMONY_VERSION_PATH/utilities/mhc/config/project.hconfig
 #
-CONFIG_XC32_HEAP="2048"
+CONFIG_XC32_HEAP="16384"
 #
 # from $HARMONY_VERSION_PATH/utilities/mhc/config/isa.hconfig
 #
