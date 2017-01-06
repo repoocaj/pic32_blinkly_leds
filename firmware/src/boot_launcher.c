@@ -1,25 +1,10 @@
-//****************************************************************************
-// file name:           boot_laucher.c
-// Confidential -- Proprietary Information
-// copyright 2016 SMT Engineering, LLC
-// All Rights Reserved.
-// author:              J Mosenfelder (SMT Engineering, LLC)
-//
-// description:         api for launching boot loader from application
-//
-//
-// Version:            1.00.00
-// Language:           C
-// Compiler:           XC32 (1.42) [c:\Microchip\xc32\v1.42\bin
-//
-// Processor:       PIC32MZ
-//
-// revision history:
-// yyyy/mm/dd    <three initials of revision author>  <description of revision>
-// 2016/11/14   JRM new file
-// ***************************************************************************
-
 //------------------------------------------------------------------------------
+/*!
+ * @file       boot_launcher.c 
+ * @brief      API for launching boot loader from application
+ * 
+ * @copyright  Copyright &copy; 2016 Exosite LLC, All rights reserved.
+ */
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
@@ -28,10 +13,10 @@
 #include <xc.h>          /* Defines special funciton registers, CP0 regs  */
 
 #include <stdint.h>          /* For uint32_t definition                       */
-#include <stdbool.h>         /* For true/false definition                     */
 #include <stdlib.h>          /* ATOI */
 #include <limits.h>
 #include <string.h>
+
 #include "system/reset/sys_reset.h" 
 #include "boot_launcher.h"       // self header
 //------------------------------------------------------------------------------
@@ -156,7 +141,31 @@ void boot_loader_clear_result (void)
 
     *p_boot_result = BOOT_RESULT_NONE ;
 }
+
 //------------------------------------------------------------------------------
+/*!
+ * @fn      bool boot_launcher_get_version(boot_version_t * version)
+ *
+ * @brief   Returns true and the version of the bootloader if started from the bootloader.
+ *
+ * @param   version A pointer to the version structure to fill out.
+ *
+ * @return  True if a valid version structure was found, false otherwise.
+ */
+//------------------------------------------------------------------------------
+bool boot_launcher_get_version(boot_version_t * version)
+{
+    boot_version_t * p_version = (boot_version_t *) BOOT_LAUNCHER_VERSION_ADDRESS;
+
+    if (NULL != version && p_version->valid == BOOT_LAUNCHER_VERSION_VALID)
+    {
+        version->major = p_version->major;
+        version->minor = p_version->minor;
+        version->patch = p_version->patch;
+        return true;
+    }
+    return false;
+}
 
 //------------------------------------------------------------------------------
 /*
