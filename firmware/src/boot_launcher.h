@@ -14,6 +14,7 @@
 // Header Files
 //------------------------------------------------------------------------------
 #include <stdint.h>
+#include <stdbool.h>         /* For true/false definition                     */
 #include "debug_flags.h"
 
 //------------------------------------------------------------------------------
@@ -82,6 +83,8 @@ void * boot_launcher__get_NVM_base_address( void );
 BOOT_LOADER_RESULT_T boot_loader_get_result( void );
 
 void boot_loader_clear_result( void );
+
+bool boot_launcher_get_version(boot_version_t * version);
 
 #endif  // _X_BOOT_LAUNCHER_H
 
